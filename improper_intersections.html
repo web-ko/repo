@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamar Gedevanishvili - Improper Intersections</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
+	<link rel="icon" sizes="32x32" type="image/png" href="img/favicon_32.png">
+	<link rel="icon" sizes="16x16" type="image/png" href="img/favicon_16.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/baguetteBox.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/video-js.min.css">
+
+	<!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/> -->
+	<!-- <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet"> -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20260119">
+	<link rel="stylesheet" type="text/css" href="css/improper.css">
+</head>
+<body class="body-improper forGrascale">
+	<header id="header" class="header d-flex align-items-center">
+		<div class="container-fluid for_border for_background index-container">
+		    <div class="container d-flex align-items-center justify-content-between fixed-top">
+		      	<a href="index.html" class="logo d-flex align-items-center">
+		        	<!-- Uncomment the line below if you also wish to use an image logo -->
+		        	<!-- <img src="assets/img/logo.png" alt=""> -->
+		        	<!-- <img class="logo-black" src="img/logo-black.svg"> -->
+		        	<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 50.3">
+						<g>
+							<g>
+								<path class="st0" d="M6.1,18.6V2.2H0V0h14.8v2.2H8.6v16.4H6.1z"/>
+								<path class="st0" d="M13.3,18.6L20.5,0h2.7l7.6,18.6H28L25.8,13H18l-2,5.6H13.3z M18.7,11H25l-1.9-5.2C22.5,4.3,22,3,21.7,2
+									c-0.2,1.2-0.6,2.4-1,3.6L18.7,11z"/>
+								<path class="st0" d="M32.6,18.6V0h3.7l4.4,13.2c0.4,1.2,0.7,2.1,0.9,2.8c0.2-0.7,0.5-1.7,1-3l4.5-13h3.3v18.6H48V3l-5.4,15.6h-2.2
+									L35,2.8v15.9L32.6,18.6L32.6,18.6z"/>
+								<path class="st0" d="M52.3,18.6L59.5,0h2.7l7.6,18.6H67L64.8,13H57l-2,5.6H52.3z M57.7,11H64l-1.9-5.2C61.5,4.3,61,3,60.8,2
+									c-0.2,1.2-0.6,2.4-1,3.6L57.7,11z"/>
+								<path class="st0" d="M71.8,18.6V0H80c1.7,0,2.9,0.2,3.8,0.5s1.6,0.9,2.1,1.8c0.5,0.8,0.8,1.8,0.8,2.8c0,1.3-0.4,2.4-1.3,3.3
+									s-2.2,1.5-4,1.7c0.7,0.3,1.1,0.6,1.5,0.9c0.7,0.7,1.4,1.5,2,2.5l3.2,5.1H85l-2.5-3.9c-0.7-1.1-1.3-2-1.8-2.6s-0.9-1-1.3-1.2
+									s-0.7-0.4-1.1-0.5c-0.3-0.1-0.7-0.1-1.4-0.1H74v8.3C74,18.6,71.8,18.6,71.8,18.6z M74.2,8.2h5.3c1.1,0,2-0.1,2.6-0.3
+									s1.1-0.6,1.4-1.1S84,5.7,84,5.1c0-0.9-0.3-1.6-1-2.2C82.4,2.3,81.4,2,80,2h-5.9L74.2,8.2L74.2,8.2z"/>
+							</g>
+							<g>
+								<path class="st0" d="M10.1,42.5v-2.2H18v6.9c-1.2,1-2.5,1.7-3.7,2.2c-1.3,0.5-2.6,0.7-4,0.7c-1.8,0-3.5-0.4-5-1.2S2.7,47,1.9,45.5
+									s-1.1-3.1-1.1-5c0-1.8,0.4-3.5,1.1-5.1C2.7,34,3.8,32.8,5.2,32s3.1-1.1,4.9-1.1c1.3,0,2.6,0.2,3.7,0.7c1.1,0.4,1.9,1,2.6,1.8
+									c0.6,0.8,1.1,1.8,1.4,3L15.5,37c-0.3-0.9-0.6-1.7-1-2.2s-1-1-1.8-1.3S11.1,33,10.1,33C9,33,8,33.2,7.2,33.5s-1.5,0.8-2,1.4
+									S4.3,36.1,4,36.7c-0.5,1.2-0.7,2.4-0.7,3.7c0,1.7,0.3,3,0.9,4.2c0.6,1.1,1.4,1.9,2.5,2.5c1.1,0.5,2.3,0.8,3.5,0.8
+									c1.1,0,2.1-0.2,3.1-0.6c1-0.4,1.8-0.8,2.3-1.3v-3.5C15.6,42.5,10.1,42.5,10.1,42.5z"/>
+								<path class="st0" d="M21.7,49.8V31.2h13.5v2.2h-11v5.7h10.3v2.2H24.1v6.3h11.4v2.2C35.5,49.8,21.7,49.8,21.7,49.8z"/>
+								<path class="st0" d="M39,49.8V31.2h6.4c1.4,0,2.6,0.1,3.3,0.3c1.1,0.2,2,0.7,2.7,1.3c1,0.8,1.7,1.9,2.2,3.2s0.7,2.8,0.7,4.4
+									c0,1.4-0.2,2.7-0.5,3.8s-0.8,2-1.3,2.7s-1.1,1.3-1.7,1.7s-1.4,0.7-2.2,0.9c-0.9,0.2-1.9,0.3-3,0.3C45.6,49.8,39,49.8,39,49.8z
+									 M41.5,47.6h4c1.2,0,2.2-0.1,2.9-0.3s1.3-0.6,1.7-1c0.6-0.6,1-1.4,1.4-2.4c0.3-1,0.5-2.2,0.5-3.6c0-1.9-0.3-3.4-1-4.5
+									c-0.6-1-1.4-1.7-2.3-2.1c-0.7-0.3-1.7-0.4-3.2-0.4h-3.9v14.3H41.5z"/>
+								<path class="st0" d="M57.8,49.8V31.2h13.5v2.2h-11v5.7h10.3v2.2H60.3v6.3h11.4v2.2C71.7,49.8,57.8,49.8,57.8,49.8z"/>
+								<path class="st0" d="M80.5,49.8l-7.2-18.6H76l4.8,13.5c0.4,1.1,0.7,2.1,1,3c0.3-1,0.6-2,1-3l5-13.5h2.5L83,49.8H80.5z"/>
+								<path class="st0" d="M88.5,49.8l7.2-18.6h2.7l7.6,18.6h-2.8l-2.2-5.6h-7.8l-2,5.6H88.5z M93.9,42.2h6.3L98.3,37
+									c-0.6-1.6-1-2.9-1.3-3.9c-0.2,1.2-0.6,2.4-1,3.6L93.9,42.2z"/>
+								<path class="st0" d="M107.9,49.8V31.2h2.5l9.8,14.6V31.2h2.4v18.6H120l-9.8-14.6v14.6C110.2,49.8,107.9,49.8,107.9,49.8z"/>
+								<path class="st0" d="M127.1,49.8V31.2h2.5v18.6C129.6,49.8,127.1,49.8,127.1,49.8z"/>
+								<path class="st0" d="M133.1,43.9l2.3-0.2c0.1,0.9,0.4,1.7,0.8,2.3c0.4,0.6,1,1.1,1.9,1.4c0.8,0.4,1.8,0.6,2.9,0.6
+									c0.9,0,1.8-0.1,2.5-0.4c0.7-0.3,1.3-0.7,1.6-1.1c0.4-0.5,0.5-1,0.5-1.6s-0.2-1.1-0.5-1.5s-0.9-0.8-1.7-1.1
+									c-0.5-0.2-1.6-0.5-3.3-0.9s-2.9-0.8-3.6-1.2c-0.9-0.5-1.6-1-2-1.7s-0.7-1.5-0.7-2.3c0-0.9,0.3-1.8,0.8-2.6s1.3-1.4,2.3-1.9
+									c1-0.4,2.2-0.6,3.4-0.6c1.4,0,2.6,0.2,3.7,0.7c1.1,0.4,1.9,1.1,2.4,2c0.6,0.9,0.9,1.8,0.9,2.9l-2.4,0.2c-0.1-1.2-0.6-2.1-1.3-2.7
+									s-1.8-0.9-3.2-0.9c-1.5,0-2.6,0.3-3.3,0.8s-1,1.2-1,2c0,0.7,0.2,1.2,0.7,1.7c0.5,0.4,1.7,0.9,3.7,1.3c2,0.5,3.4,0.8,4.1,1.2
+									c1.1,0.5,1.9,1.1,2.4,1.9s0.8,1.6,0.8,2.6s-0.3,1.9-0.9,2.8c-0.6,0.9-1.4,1.6-2.4,2c-1.1,0.5-2.3,0.7-3.6,0.7
+									c-1.7,0-3.1-0.2-4.2-0.7c-1.1-0.5-2-1.2-2.7-2.2C133.5,46.2,133.1,45.1,133.1,43.9z"/>
+								<path class="st0" d="M151.4,49.8V31.2h2.5v7.6h9.7v-7.6h2.5v18.6h-2.5V41h-9.7v8.8H151.4z"/>
+								<path class="st0" d="M175.4,49.8l-7.2-18.6h2.7l4.8,13.5c0.4,1.1,0.7,2.1,1,3c0.3-1,0.6-2,1-3l5-13.5h2.5l-7.3,18.6
+									C177.9,49.8,175.4,49.8,175.4,49.8z"/>
+								<path class="st0" d="M187.8,49.8V31.2h2.5v18.6C190.3,49.8,187.8,49.8,187.8,49.8z"/>
+								<path class="st0" d="M194.5,49.8V31.2h2.5v16.4h9.2v2.2H194.5z"/>
+								<path class="st0" d="M209.5,49.8V31.2h2.5v18.6C212,49.8,209.5,49.8,209.5,49.8z"/>
+							</g>
+						</g>
+					</svg>
+		      	</a>
+		      	<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+		      	<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+		      	<nav id="navbar" class="navbar">
+			      	<div class="navbar_overlay"></div>
+			      	<ul>
+			      		<li>
+			      			<a href="index.html">Home</a></li>
+			      		<li>
+			      			<a href="projects.html" class="active">Projects</a>
+			          	</li>
+			          	<li>
+				        	<a href="graphic.html">Graphic</a>
+			          	</li>
+			          	<li>
+			      			<a href="gallery.html">Gallery</a>
+			          	</li>
+			          	<li>
+			          		<a href="publication.html?v=20260115">Publications</a>
+			          	</li>
+				        <li>
+				        	<a href="contact.html">Contact</a>
+				        </li>
+				    </ul>
+		      	</nav><!-- .navbar -->
+		    </div>
+	    </div>
+  	</header><!-- End Header -->
+	<section class="inter_head" id="trigger-icon">
+		<!-- <h6 class="container-fluid container-xl improper-back">
+			<a href="projects.html">
+				<svg viewBox="0 0 16 16" focusable="false" xmlns="http://www.w3.org/2000/svg">
+					<path stroke="currentColor" stroke-miterlimit="10" d="M8 3v9m4-4l-4 3.999L4 8"></path>
+				</svg>
+				<span>Go Back</span>
+			</a>
+		</h6> -->
+		<h6 class="container-fluid improper_gallery-back">
+			<a href="projects.html">Projects</a>
+			<span></span>
+			<a href="improper_intersections.html">Improper Intersections</a>
+		</h6>
+		<div class="container container-improper">
+			<div class="row gy-4 gallery">
+				<div class="col-12">
+					<h2>Improper Intersections</h2>
+					<div class="forGallery">
+					    <a href="improper_gallery.html">
+					    	<span>Open gallery</span>
+					    </a>
+					</div>
+					<p class="sub_title">A solo show by Tamar Gedevanishvili <br>in Tbilisi History Museum (Karvasla), Tbilisi, 7−12 June 2022.</p>
+					<h6 class="concept_title">Curator: Lika Mamatsashvili</h6>
+					<h6 class="concept_title1">Concept</h6>
+					<p class="concept">At times we want to displace our sensations that we have experienced in certain circumstances, and locate them onto an entirely different surface bringing about an ‘improper’ coalition or mixture. Where can we draw a line between reality and these sensations? Which surface are we then standing on right now?
+					<br>If we envisage objects as a space of thoughts and ideas, as a rigid sensation that has stayed in the same juxtaposition and combination in which we had left it; if we envisage them as an investment made by our thoughts that we have to displace and adjust to new surfaces and sensations, where will we end up?
+					<br>Is it possible for a sensation left behind in infancy, or a state once existing in the past, to recur in the present−and under improper circumstances?
+					<br>I believe that everything that encircles us, that has existed, or that we have thought about−images and objects−can be intersected at improper time and space creating a visual illustration of the invisible which is called our ‘true’ portrait.</p>
+					<h6 class="concept_signature">Tamar Gedevanishvili</h6>
+					<p class="article_title">“Improper Intersections”: A solo show by Tamar Gedevanishvili in Karvasla <br>by Khatuna Khabuliani</p>
+					<p class="article_title_under">Tamar Gedevanishvili creates a graphics series on paper napkins: sketches modeled with speed and expression. She uses a non-solid matter to depict rapidly decaying moments. They unite fragments that are about to slip away from the person’s memory. The elapsing images of cafés resemble here the same tempo at which the images fall into the horizon of the café visitors. This airiness and ephemerality also characterises Tamar’s extensive and multicoloured painting series. It emerges under the circumstances of the coronavirus pandemic when the abstract reflection on time and the search for meaning became the normality of mass culture. The series focuses precisely on components that cannot turn into mass entertainment, and distances itself from predictable currents. It is the visual material from the period when the painter abandons the pandemic routine and does her work: to think with images.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/20220529_193017_17.webp">
+						<a href="img/20220529_193017_17.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/20220425.webp">
+						<a href="img/20220425.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12">
+					<p class="under_img">The exhibition “Improper Intersections” will inevitably remind you of the recurring theme of Marcel Proust’s writings: psychological and emotional states of remembering things past. The artist draws utterly subjective and intimate moments from her memory and places them in a different context. In this manner, it seems, she searches for their meaning while inviting the spectator to play a game with their emotional intellect to solve visual puzzles. These moments may not be consciously reflected upon, but are rather the immediate impression characteristic of childlike perception.</p>
+					<p class="under_img">These experiences, without yet an articulated meaning, come alive when combined with perhaps completely contrasting phenomena that exist in other strange times; they create, as it were, new realities. The paintings of Tamar Gedevanishvili may also indicate that the least significant personal emotion or even phenomenon is valuable in its own way; and in a new constellation it may reveal its value at its best, acquire full content or even allow the old emotion to wander in a new time and setting.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/285315958_78.webp" class="grayScale">
+						<a href="img/285315958_78.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/20220608_141021.webp" class="irinSatura grayScale">
+						<a href="img/20220608_141021.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12">
+					<p class="under_img">Already at first glance, the exposition displayed in the central hall for temporary exhibitions at Tbilisi History Museum (Karvasla) demonstrates the unity of Tamar’s graphic and painterly works. It is immediately apparent that the diptychs, the polyptychs and the other compositions form a stream, and the visualisations flow like a river. The characters in the series are more generic than specific. If you take a closer look, however, portrait features also seem to activate, and an uninterrupted compilation of unexpectedly odd stories unfolds before your eyes.</p>
+					<p class="under_img">Surrealist allusions appear at first sight on various territories of nude, elastic bodies. They arise, as it were, from visions and are accompanied by their stories or by the scenes built up in their imagination. Time is relative here, space dreamily illusory-transcending the laws of physics and logic. The style of the compositions and the original signature of the painter are determined by the following unity of elements: the weightlessness of elastic nude bodies in a constantly changing specific environment−be it a landscape, a park with fountains and lanterns or a background of industrial architecture. Windows, doors and apertures in general occur frequently in the architectural setting, with a character portrayed and tightly linked to them. There seems to be an aspiration to look beyond or to go beyond.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/IMG_5724.webp" class="openSatura grayScale">
+						<a href="img/IMG_5724.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/IMG_5733.webp" class="irinSatura grayScale">
+						<a href="img/IMG_5733.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12">
+					<p class="under_img">The nudity of the characters is also of special importance. It is free of material body and weight. The nudity is the state that exclusively exhibits the character’s existential dimension and openness. The dramatic interior of the old building is very impressive, with a person indirectly protruding into it. His whole attention is directed at the ceiling as if there is a fear or an anticipation of disaster−the state of baselessness. The fragment of the several characters in a bar interior set against a red landscape is reminiscent of Nighthawks by Edward Hopper.</p>
+					<p class="under_img">It is as if the episode of the renowned artwork has fallen into another reality, ‘into someone else’s dream’. Intense red often determines the different compositions of this series, and it plays its own role in each of them. In the interior of the underground carriage, it starkly reinforces the loneliness of the only nude passenger; in the park episode, the red, carpet-like ground accentuates a theatrical motif and discloses the dramatic essence of a seemingly idyllic image. <br>“Improper Intersections” is an extravagant series-experiment on new possibilities or the infinity of possibilities.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/20220608_123205.webp" class="forFilter">
+						<a href="img/20220608_123205.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6">
+					<div class="video-container">
+						<video id="vid" class="my-video video-js" data-setup="{}" controls>
+							<source src="img/at-the-exhibition.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+				<!-- <div class="col-12 col-md-6 col-lg-6">
+					<div class="video">
+						<iframe width="1271" height="715" src="https://www.youtube.com/embed/5hbDiUO0qXw" title="#დღისკოდი  „შეუსაბამო გადაკვეთები“ - სტუმარი: თამარ გედევანიშვილი - მხატვარი" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<div class="video_text">
+						<p>Improper Intersections − Tamar Gedevanishvili</p>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!-- <section class="forGallery-sect">
+		<div class="forGallery">
+			<h2>IMPROPER INTERSETCIONS GALLERY</h2>
+			<a href="improper_gallery.html"><span>OPEN</span></a>
+		</div>
+	</section> -->
+	<!-- <section class="work-gallery">
+		<h1 class="title">GALLERY</h1>
+		<div class="container gallery">
+			<div class="row gx-5 gall">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akv-14">
+					<div>
+						<a href="img/20220425.webp">
+							<div class="image">
+								<img class="akvareli-14" src="img/20220425.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akv-14">
+					<div>
+						<a href="img/20210825_112102.webp">
+							<div class="image">
+								<img class="akvareli-14" src="img/20210825_112102.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 ka-ci">
+					<div>
+						<a href="img/20210831_095125.webp">
+							<div class="image">
+								<img class="kaci" src="img/20210831_095125.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-6">
+					<div>
+						<a href="img/20210825_112201.webp">
+							<div class="image">
+								<img class="akvareli-6" src="img/20210825_112201.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-7">
+					<div>
+						<a href="img/20210822_131900.webp">
+							<div class="image">
+								<img class="akvareli-7" src="img/20210822_131900.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-20">
+					<div>
+						<a href="img/20210809_113542.webp">
+							<div class="image">
+								<img class="akvareli-20" src="img/20210809_113542.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOUR ON PAPER</h6>
+								<h6 class="water-2-h-h6">30 X 42 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-02">
+					<div>
+						<a href="img/Acrylic-140x100.webp">
+							<div class="image">
+								<img class="skulptura-02" src="img/Acrylic-140x100.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guache-13">
+					<div>
+						<a href="img/Acrylic_140x100.webp">
+							<div class="image">
+								<img class="guashi-13" src="img/Acrylic_140x100.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">42 X 60 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guach-2">
+					<div>
+						<a href="img/Acrylic-100x70_01.webp">
+							<div class="image">
+								<img class="guaSi-2" src="img/Acrylic-100x70_01.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">42 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-1">
+					<div>
+						<a href="img/Acrylic-122x86_cm.webp">
+							<div class="image">
+								<img class="graviura-1" src="img/Acrylic-122x86_cm.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">52 X 52 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 sket-9">
+					<div>
+						<a href="img/Acrylic_140x100_cm.webp">
+							<div class="image">
+								<img class="sketch-9" src="img/Acrylic_140x100_cm.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SKETCH ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 sket-14">
+					<div>
+						<a href="img/04.webp">
+							<div class="image">
+								<img class="sketch-14" src="img/04.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SKETCH ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-01">
+					<div>
+						<a href="img/70x50_01.webp">
+							<div class="image">
+								<img class="skulptura-01" src="img/70x50_01.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-11">
+					<div>
+						<a href="img/20210814_151954.webp">
+							<div class="image">
+								<img class="graviura-11" src="img/20210814_151954.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+	           			</a>
+           			</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-3">
+					<div>
+						<a href="img/20210820_112634.webp">
+							<div class="image">
+								<img class="akvareli-3" src="img/20210820_112634.webp" onclick="change(this)">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-18">
+					<div>
+						<a href="img/20210820_112913.webp">
+							<div class="image">
+								<img class="akvareli-18" src="img/20210820_112913.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guach-4">
+					<div>
+						<a href="img/20210822_101519.webp">
+							<div class="image">
+								<img class="guaSi-4" src="img/20210822_101519.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-21">
+					<div>
+						<a href="img/20210826_094259.webp">
+							<div class="image">
+								<img class="akvareli-21" src="img/20210826_094259.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 inki-1">
+					<div>
+						<a href="img/20210827_101725.webp">
+							<div class="image">
+								<img class="ink-1" src="img/20210827_101725.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">INK & WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-05">
+					<div>
+						<a href="img/20210831_095434.webp">
+							<div class="image">
+								<img class="skulptura-05" src="img/20210831_095434.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 sket-27">
+					<div>
+						<a href="img/20210831_095512.webp">
+							<div class="image">
+								<img class="sketch-27" src="img/20210831_095512.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SKETCH ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-10">
+					<div>
+						<a href="img/20210831_184536.webp">
+							<div class="image">
+								<img class="graviura-10" src="img/20210831_184536.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">52 X 52 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guaS-1">
+					<div>
+						<a href="img/20210831_184641.webp">
+							<div class="image">
+								<img class="guaSi-1" src="img/20210831_184641.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-10">
+					<div>
+						<a href="img/20210902_152711.webp">
+							<div class="image">
+								<img class="akvareli-10" src="img/20210902_152711.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 inki">
+					<div>
+						<a href="img/20210903_093219.webp">
+							<div class="image">
+								<img class="ink" src="img/20210903_093219.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">INK ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-12">
+					<div>
+						<a href="img/20210903_093427.webp">
+							<div class="image">
+								<img class="graviura-12" src="img/20210903_093427.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guach-1">
+					<div>
+						<a href="img/20210904_100350.webp">
+							<div class="image">
+								<img class="guache-1" src="img/20210904_100350.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">30 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-16">
+					<div>
+						<a href="img/20210904_153205.webp">
+							<div class="image">
+								<img class="graviura-16" src="img/20210904_153205.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">34 X 26 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-16">
+					<div>
+						<a href="img/Acrylic_100x70_cm _04.webp">
+							<div class="image">
+								<img class="akvareli-16" src="img/Acrylic_100x70_cm _04.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-16">
+					<div>
+						<a href="img/20210905_110911.webp">
+							<div class="image">
+								<img class="akvareli-16" src="img/20210905_110911.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-04">
+					<div>
+						<a href="img/20210919_102004.webp">
+							<div class="image">
+								<img class="skulptura-04" src="img/20210919_102004.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 inki-2">
+					<div>
+						<a href="img/20210925_140112.webp">
+							<div class="image">
+								<img class="ink-2" src="img/20210925_140112.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">INK ON PAPER</h6>
+								<h6 class="water-2-h-h6">30 X 21 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 past-9">
+					<div>
+						<a href="img/20211003_125459.webp">
+							<div class="image">
+								<img class="pastel-9" src="img/20211003_125459.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">PASTEL ON PAPER</h6>
+								<h6 class="water-2-h-h6">64 X 46 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 sket-1">
+					<div>
+						<a href="img/20211003_125514.webp">
+							<div class="image">
+								<img class="sketch-1" src="img/20211003_125514.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SKETCH ON PAPER</h6>
+								<h6 class="water-2-h-h6">30 X 21 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guach-3">
+					<div>
+						<a href="img/20211003_125631.webp">
+							<div class="image">
+								<img class="guaSi-3" src="img/20211003_125631.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">42 X 60 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guash-2">
+					<div>
+						<a href="img/20211016_103955.webp">
+							<div class="image">
+								<img class="guache-2" src="img/20211016_103955.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-03">
+					<div>
+						<a href="img/20211022_154751.webp">
+							<div class="image">
+								<img class="skulptura-03" src="img/20211022_154751.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-38">
+					<div>
+						<a href="img/20220403_131337.webp">
+							<div class="image">
+								<img class="akvareli-38" src="img/20220403_131337.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 grav-18">
+					<div>
+						<a href="img/20220529_193017_17.webp">
+							<div class="image">
+								<img class="graviura-18" src="img/20220529_193017_17.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">ENGRAVING ON CARDBOARD</h6>
+								<h6 class="water-2-h-h6">30 X 20 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guash-3">
+					<div>
+						<a href="img/Acrylic_86x61_cm_10.webp">
+							<div class="image">
+								<img class="guache-3" src="img/Acrylic_86x61_cm_10.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-5">
+					<div>
+						<a href="img/Acrylic 100x70_cm _05.webp">
+							<div class="image">
+								<img class="akvareli-5" src="img/Acrylic 100x70_cm _05.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">15 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guash-11">
+					<div>
+						<a href="img/Acrylic_100x70_cm _06.webp">
+							<div class="image">
+								<img class="guache-11" src="img/Acrylic_100x70_cm _06.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">60 X 42 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 sket-16">
+					<div>
+						<a href="img/Acrylic_100x70_cm_08.webp">
+							<div class="image">
+								<img class="sketch-16" src="img/Acrylic_100x70_cm_08.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SKETCH ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 guashi-5">
+					<div>
+						<a href="img/Acrylic_100x70_cm_11.webp">
+							<div class="image">
+								<img class="guaSi-5" src="img/Acrylic_100x70_cm_11.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">GOUACHE ON PAPER</h6>
+								<h6 class="water-2-h-h6">42 X 60 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-26">
+					<div>
+						<a href="img/Acrylic_on_paper_100x70_cm_02.webp">
+							<div class="image">
+								<img class="akvareli-26" src="img/Acrylic_on_paper_100x70_cm_02.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 skulp-06">
+					<div>
+						<a href="img/Acrylic_on_paper_100x70_cm.webp">
+							<div class="image">
+								<img class="skulptura-06" src="img/Acrylic_on_paper_100x70_cm.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">SCULPTURE</h6>
+								<h6 class="water-2-h-h6">SCULPTURE CLAY</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 akva-39">
+					<div>
+						<a href="img/Acrylic_on_paper_100x70_cm_03.webp">
+							<div class="image">
+								<img class="akvareli-39" src="img/Acrylic_on_paper_100x70_cm_03.webp">
+							</div>
+							<div class="water-2-h">
+								<h6 class="water-2-h-h6">WATERCOLOR ON PAPER</h6>
+								<h6 class="water-2-h-h6">21 X 30 CM</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<div class="trigger-container">
+		<a href="#trigger-icon">
+			<div class="trigger-icon js-trigger-icon">
+		        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" viewBox="0 0 16 16">
+		        	<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+		        </svg>
+			</div>
+		</a>
+	</div>
+	<footer>
+		<section>
+			<div class="container-footer">
+				<div class="row-footer">
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Projects</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="given_time.html">Given Time</a>
+								</li>
+								<li class="footer-link">
+									<a href="charity-elene.html">Group exhibition for #Elene</a>
+								</li>
+								<li class="footer-link">
+									<a href="we-color-qart1.html">Qart1</a>
+								</li>
+								<li class="footer-link">
+									<a href="flow-of-people.html">The flow of people will not stop</a>
+								</li>
+								<li class="footer-link">
+									<a href="we-color-georgia.html">We Color Georgia</a>
+								</li>
+								<li class="footer-link">
+									<a href="strong-georgia.html">Strong Georgia</a>
+								</li>
+								<li class="footer-link">
+									<a href="home.html">Home</a>
+								</li>
+								<li class="footer-link">
+									<a href="renovation.html">Renovation</a>
+								</li>
+								<li class="footer-link">
+									<a href="fiesta.html">Fiesta</a>
+								</li>
+								<li class="footer-link">
+									<a href="free-city.html">Free City</a>
+								</li>
+								<li class="footer-link">
+									<a href="our_times.html">Connections</a>
+								</li>
+								<li class="footer-link">
+									<a href="our_times.html">Our Times</a>
+								</li>
+								<li class="footer-link">
+									<a href="improper_intersections.html">Improper Intersections</a>
+								</li>
+								<li class="footer-link">
+									<a href="kipshidze-wall.html">Kipshidze Wall</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer footer-second">
+						<div>
+							<h5 class="title-home">Graphic</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="whole-life.html">For a Whole Life</a>
+								</li>
+								<li class="footer-link">
+									<a href="love_in_vain.html">Love in Vain</a>
+								</li>
+								<li class="footer-link">
+									<a href="scenes-from-life.html">Scenes from Life</a>
+								</li>
+								<li class="footer-link">
+									<a href="napkins.html">Napkins at Cafe</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer footer-third">
+						<div>
+							<h5 class="title-home">Gallery</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="given-time-for_gallery.html">Given Time</a>
+								</li>
+								<li class="footer-link">
+									<a href="improper_gallery-for_gallery.html">Improper Intersections</a>
+								</li>
+								<li class="footer-link">
+									<a href="painting.html">Painting</a>
+								</li>
+								<li class="footer-link">
+									<a href="pastel.html">Pastel</a>
+								</li>
+								<li class="footer-link">
+									<a href="watercolor.html">Watercolor</a>
+								</li>
+								<li class="footer-link">
+									<a href="gouache.html">Gouache</a>
+								</li>
+								<li class="footer-link">
+									<a href="sculpture.html">Sculpture</a>
+								</li>
+								<li class="footer-link">
+									<a href="engraving.html">Engraving</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Contact</h5>
+							<ul>
+								<li class="footer-link">Phone: 
+									<a href="tel:+995599270979">(+995) 599270979</a>
+								</li>
+								<li class="footer-link">
+									Email:
+									<a href="mailto:tamgedevani@gmal.com">tamgedevani@gmail.com</a>
+								</li>
+								<!-- <li class="footer-link inst-face">
+									<a href="https://www.instagram.com/gedevanishvilit/?fbclid=IwAR38-J26NKYZy-R4wkIrW2jXMquZDOJsfrpLxbARvC4oGeoFTAgaTBeFszA" target="blank"><i class="fa-brands fa-instagram"></i></a>
+									<a href="#;"><i class="fa-brands fa-facebook"></i></a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Follow Me</h5>
+							<ul>
+								<li class="footer-link inst-face">
+									<a href="https://www.instagram.com/gedevanishvilit/?fbclid=IwAR38-J26NKYZy-R4wkIrW2jXMquZDOJsfrpLxbARvC4oGeoFTAgaTBeFszA" target="blank"><i class="fa-brands fa-instagram"></i></a>
+									<a href="#;"><i class="fa-brands fa-facebook"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-end">
+						<div>
+							<p class="footer-copy">© 2025 Tamar Gedevanishvili. All rights reserved.</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+	</footer>
+
+
+
+
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/baguetteBox.js"></script> -->
+	<script type="text/javascript" src="js/fancybox-forYoutube.umd.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/script.js?v=20260118"></script>
+	
+	<script type="text/javascript" src="js/video.min.js"></script>
+
+	<!-- <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script> -->
+	<!-- <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script> -->
+
+
+	<script>
+		// კლასების დამატება grayscale-ისთვის და contrast-ისთვის
+		Fancybox.bind("[data-fancybox='gallery_2']", {
+		    on: {
+		        reveal: (fancybox, slide) => {
+		            if (!slide.imageEl) return; // safety check
+
+		            const src = slide.imageEl.src;
+		            
+		            // Add class to any of these specific images
+		            if (
+		                src.includes("285315958_78.webp") ||
+		                src.includes("20220608_141021.webp") ||
+		                src.includes("IMG_5724.webp") ||
+		                src.includes("IMG_5733.webp")
+		            ) {
+		                slide.imageEl.classList.add("grayscale-special");
+		            }
+
+		            if (
+		                src.includes("20220608_123205.webp") 
+		            ) {
+		                slide.imageEl.classList.add("contrast-special");
+		            }
+		        },
+
+		        // Clean up when this slide is no longer visible (important!)
+		        hide: (fancybox, slide) => {
+		            if (slide.imageEl) {
+		                slide.imageEl.classList.remove("grayscale-special contrast-special");
+		            }
+		        },
+
+		        // Keep your existing handlers
+		        close: (fancybox) => {
+		            $("body").removeClass("newSwiper-body");
+		        },
+		        init: (fancybox) => {
+		            $("body").addClass("newSwiper-body");
+		        }
+		    },
+		    Carousel: {
+		        infinite: false,
+		        transition: "slide",
+		        // Remove the navigation arrows
+		        // Navigation: false,
+		    },
+		    compact: false, /*Background click close. თუ ამოვაკომენტარებ მაშინ min-width: 579px-ზე იმუშავებს და max-width: 578px-ზე - არა*/
+		    idle: false,
+		    animated: true,
+		    Toolbar: {
+		        display: {
+		          left: [],
+		          // middle: ["infobar"],
+		          right: [/*"fullscreen",*/ "close"],
+		        },
+		    },
+		    Thumbs: {
+		        // type: 'modern',
+		        type: '',
+		        // Carousel: {
+		        //   center: function () {
+		        //     return this.contentDim > this.viewportDim;
+		        //   },
+		        // },
+		    },
+		});
+
+		// fancybox-ის დახურვის შემდეგ ისევ იმ ადგილას, საიდანაც დავიწყე თვალიერება
+		// let scrollTop = 0;
+
+		// Fancybox.bind("[data-fancybox='gallery_2']", {
+		//     on: {
+		//         init: () => {
+		//             // Save scroll position
+		//             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		//             // Lock page exactly where it is
+		//             $("body")
+		//                 .css({
+		//                     // position: "fixed",
+		//                     position: "",
+		//                     top: -scrollTop + "px",
+		//                     // width: "100%",
+		//                     width: "",
+		//                 })
+		//                 .addClass("newSwiper-body");
+		//         },
+
+		//         destroy: () => {
+		//             // Unlock body
+		//             $("body")
+		//                 .removeClass("newSwiper-body")
+		//                 .css({
+		//                     position: "",
+		//                     top: "",
+		//                     width: "",
+		//                 });
+
+		//             // Restore scroll AFTER layout is fully restored
+		//             window.scrollTo(0, scrollTop);
+		//         }
+		//     },
+		//     Carousel: {
+		//         infinite: false,
+		//         transition: "slide",
+		//     },
+
+		//     compact: false,
+		//     idle: false,
+		//     animated: false,
+
+		//     Toolbar: {
+		//         display: {
+		//             left: [],
+		//             right: ["close"],
+		//         },
+		//     },
+
+		//     Thumbs: {
+		//         type: "",
+		//     },
+		// });
+	</script>
+
+
+	<!-- Google tag (gtag.js) google-analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN54RPHKDJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KN54RPHKDJ');
+    </script>
+
+
+	
+
+
+
+</body>
+</html>

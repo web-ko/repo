@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamar Gedevanishvili - Given Time</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
+	<link rel="icon" sizes="32x32" type="image/png" href="img/favicon_32.png">
+	<link rel="icon" sizes="16x16" type="image/png" href="img/favicon_16.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/baguetteBox.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/video-js.min.css">
+
+	<!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/> -->
+	<!-- <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet"> -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20260119">
+	<link rel="stylesheet" type="text/css" href="css/improper.css">
+</head>
+<body class="body-improper body-given">
+	<header id="header" class="header d-flex align-items-center">
+		<div class="container-fluid for_border for_background index-container">
+		    <div class="container d-flex align-items-center justify-content-between fixed-top">
+		      	<a href="index.html" class="logo d-flex align-items-center">
+		        	<!-- Uncomment the line below if you also wish to use an image logo -->
+		        	<!-- <img src="assets/img/logo.png" alt=""> -->
+		        	<!-- <img class="logo-black" src="img/logo-black.svg"> -->
+		        	<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 50.3">
+						<g>
+							<g>
+								<path class="st0" d="M6.1,18.6V2.2H0V0h14.8v2.2H8.6v16.4H6.1z"/>
+								<path class="st0" d="M13.3,18.6L20.5,0h2.7l7.6,18.6H28L25.8,13H18l-2,5.6H13.3z M18.7,11H25l-1.9-5.2C22.5,4.3,22,3,21.7,2
+									c-0.2,1.2-0.6,2.4-1,3.6L18.7,11z"/>
+								<path class="st0" d="M32.6,18.6V0h3.7l4.4,13.2c0.4,1.2,0.7,2.1,0.9,2.8c0.2-0.7,0.5-1.7,1-3l4.5-13h3.3v18.6H48V3l-5.4,15.6h-2.2
+									L35,2.8v15.9L32.6,18.6L32.6,18.6z"/>
+								<path class="st0" d="M52.3,18.6L59.5,0h2.7l7.6,18.6H67L64.8,13H57l-2,5.6H52.3z M57.7,11H64l-1.9-5.2C61.5,4.3,61,3,60.8,2
+									c-0.2,1.2-0.6,2.4-1,3.6L57.7,11z"/>
+								<path class="st0" d="M71.8,18.6V0H80c1.7,0,2.9,0.2,3.8,0.5s1.6,0.9,2.1,1.8c0.5,0.8,0.8,1.8,0.8,2.8c0,1.3-0.4,2.4-1.3,3.3
+									s-2.2,1.5-4,1.7c0.7,0.3,1.1,0.6,1.5,0.9c0.7,0.7,1.4,1.5,2,2.5l3.2,5.1H85l-2.5-3.9c-0.7-1.1-1.3-2-1.8-2.6s-0.9-1-1.3-1.2
+									s-0.7-0.4-1.1-0.5c-0.3-0.1-0.7-0.1-1.4-0.1H74v8.3C74,18.6,71.8,18.6,71.8,18.6z M74.2,8.2h5.3c1.1,0,2-0.1,2.6-0.3
+									s1.1-0.6,1.4-1.1S84,5.7,84,5.1c0-0.9-0.3-1.6-1-2.2C82.4,2.3,81.4,2,80,2h-5.9L74.2,8.2L74.2,8.2z"/>
+							</g>
+							<g>
+								<path class="st0" d="M10.1,42.5v-2.2H18v6.9c-1.2,1-2.5,1.7-3.7,2.2c-1.3,0.5-2.6,0.7-4,0.7c-1.8,0-3.5-0.4-5-1.2S2.7,47,1.9,45.5
+									s-1.1-3.1-1.1-5c0-1.8,0.4-3.5,1.1-5.1C2.7,34,3.8,32.8,5.2,32s3.1-1.1,4.9-1.1c1.3,0,2.6,0.2,3.7,0.7c1.1,0.4,1.9,1,2.6,1.8
+									c0.6,0.8,1.1,1.8,1.4,3L15.5,37c-0.3-0.9-0.6-1.7-1-2.2s-1-1-1.8-1.3S11.1,33,10.1,33C9,33,8,33.2,7.2,33.5s-1.5,0.8-2,1.4
+									S4.3,36.1,4,36.7c-0.5,1.2-0.7,2.4-0.7,3.7c0,1.7,0.3,3,0.9,4.2c0.6,1.1,1.4,1.9,2.5,2.5c1.1,0.5,2.3,0.8,3.5,0.8
+									c1.1,0,2.1-0.2,3.1-0.6c1-0.4,1.8-0.8,2.3-1.3v-3.5C15.6,42.5,10.1,42.5,10.1,42.5z"/>
+								<path class="st0" d="M21.7,49.8V31.2h13.5v2.2h-11v5.7h10.3v2.2H24.1v6.3h11.4v2.2C35.5,49.8,21.7,49.8,21.7,49.8z"/>
+								<path class="st0" d="M39,49.8V31.2h6.4c1.4,0,2.6,0.1,3.3,0.3c1.1,0.2,2,0.7,2.7,1.3c1,0.8,1.7,1.9,2.2,3.2s0.7,2.8,0.7,4.4
+									c0,1.4-0.2,2.7-0.5,3.8s-0.8,2-1.3,2.7s-1.1,1.3-1.7,1.7s-1.4,0.7-2.2,0.9c-0.9,0.2-1.9,0.3-3,0.3C45.6,49.8,39,49.8,39,49.8z
+									 M41.5,47.6h4c1.2,0,2.2-0.1,2.9-0.3s1.3-0.6,1.7-1c0.6-0.6,1-1.4,1.4-2.4c0.3-1,0.5-2.2,0.5-3.6c0-1.9-0.3-3.4-1-4.5
+									c-0.6-1-1.4-1.7-2.3-2.1c-0.7-0.3-1.7-0.4-3.2-0.4h-3.9v14.3H41.5z"/>
+								<path class="st0" d="M57.8,49.8V31.2h13.5v2.2h-11v5.7h10.3v2.2H60.3v6.3h11.4v2.2C71.7,49.8,57.8,49.8,57.8,49.8z"/>
+								<path class="st0" d="M80.5,49.8l-7.2-18.6H76l4.8,13.5c0.4,1.1,0.7,2.1,1,3c0.3-1,0.6-2,1-3l5-13.5h2.5L83,49.8H80.5z"/>
+								<path class="st0" d="M88.5,49.8l7.2-18.6h2.7l7.6,18.6h-2.8l-2.2-5.6h-7.8l-2,5.6H88.5z M93.9,42.2h6.3L98.3,37
+									c-0.6-1.6-1-2.9-1.3-3.9c-0.2,1.2-0.6,2.4-1,3.6L93.9,42.2z"/>
+								<path class="st0" d="M107.9,49.8V31.2h2.5l9.8,14.6V31.2h2.4v18.6H120l-9.8-14.6v14.6C110.2,49.8,107.9,49.8,107.9,49.8z"/>
+								<path class="st0" d="M127.1,49.8V31.2h2.5v18.6C129.6,49.8,127.1,49.8,127.1,49.8z"/>
+								<path class="st0" d="M133.1,43.9l2.3-0.2c0.1,0.9,0.4,1.7,0.8,2.3c0.4,0.6,1,1.1,1.9,1.4c0.8,0.4,1.8,0.6,2.9,0.6
+									c0.9,0,1.8-0.1,2.5-0.4c0.7-0.3,1.3-0.7,1.6-1.1c0.4-0.5,0.5-1,0.5-1.6s-0.2-1.1-0.5-1.5s-0.9-0.8-1.7-1.1
+									c-0.5-0.2-1.6-0.5-3.3-0.9s-2.9-0.8-3.6-1.2c-0.9-0.5-1.6-1-2-1.7s-0.7-1.5-0.7-2.3c0-0.9,0.3-1.8,0.8-2.6s1.3-1.4,2.3-1.9
+									c1-0.4,2.2-0.6,3.4-0.6c1.4,0,2.6,0.2,3.7,0.7c1.1,0.4,1.9,1.1,2.4,2c0.6,0.9,0.9,1.8,0.9,2.9l-2.4,0.2c-0.1-1.2-0.6-2.1-1.3-2.7
+									s-1.8-0.9-3.2-0.9c-1.5,0-2.6,0.3-3.3,0.8s-1,1.2-1,2c0,0.7,0.2,1.2,0.7,1.7c0.5,0.4,1.7,0.9,3.7,1.3c2,0.5,3.4,0.8,4.1,1.2
+									c1.1,0.5,1.9,1.1,2.4,1.9s0.8,1.6,0.8,2.6s-0.3,1.9-0.9,2.8c-0.6,0.9-1.4,1.6-2.4,2c-1.1,0.5-2.3,0.7-3.6,0.7
+									c-1.7,0-3.1-0.2-4.2-0.7c-1.1-0.5-2-1.2-2.7-2.2C133.5,46.2,133.1,45.1,133.1,43.9z"/>
+								<path class="st0" d="M151.4,49.8V31.2h2.5v7.6h9.7v-7.6h2.5v18.6h-2.5V41h-9.7v8.8H151.4z"/>
+								<path class="st0" d="M175.4,49.8l-7.2-18.6h2.7l4.8,13.5c0.4,1.1,0.7,2.1,1,3c0.3-1,0.6-2,1-3l5-13.5h2.5l-7.3,18.6
+									C177.9,49.8,175.4,49.8,175.4,49.8z"/>
+								<path class="st0" d="M187.8,49.8V31.2h2.5v18.6C190.3,49.8,187.8,49.8,187.8,49.8z"/>
+								<path class="st0" d="M194.5,49.8V31.2h2.5v16.4h9.2v2.2H194.5z"/>
+								<path class="st0" d="M209.5,49.8V31.2h2.5v18.6C212,49.8,209.5,49.8,209.5,49.8z"/>
+							</g>
+						</g>
+					</svg>
+		      	</a>
+		      	<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+		      	<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+		      	<nav id="navbar" class="navbar">
+			      	<div class="navbar_overlay"></div>
+			      	<ul>
+			      		<li>
+			      			<a href="index.html">Home</a></li>
+			      		<li>
+			      			<a href="projects.html" class="active">Projects</a>
+			          	</li>
+			          	<li>
+				        	<a href="graphic.html">Graphic</a>
+			          	</li>
+			          	<li>
+			      			<a href="gallery.html">Gallery</a>
+			          	</li>
+			          	<li>
+			          		<a href="publication.html?v=20260115">Publications</a>
+			          	</li>
+				        <li>
+				        	<a href="contact.html">Contact</a>
+				        </li>
+				    </ul>
+		      	</nav><!-- .navbar -->
+		    </div>
+	    </div>
+  	</header><!-- End Header -->
+	<section class="inter_head" id="trigger-icon">
+		<!-- <h6 class="container-fluid container-xl improper-back">
+			<a href="projects.html">
+				<svg viewBox="0 0 16 16" focusable="false" xmlns="http://www.w3.org/2000/svg">
+					<path stroke="currentColor" stroke-miterlimit="10" d="M8 3v9m4-4l-4 3.999L4 8"></path>
+				</svg>
+				<span>Go Back</span>
+			</a>
+		</h6> -->
+		<h6 class="container-fluid improper_gallery-back">
+			<a href="projects.html">Projects</a>
+			<span></span>
+			<a href="given_time.html">Given Time</a>
+		</h6>
+		<div class="container container-improper container-given">
+			<div class="row gy-4">
+				<div class="col-12">
+					<h2>Given Time</h2>
+					<div class="forGallery">
+					    <a href="given-time.html">
+					    	<span>Open gallery</span>
+					    </a>
+					</div>
+					<p class="sub_title">A solo show by Tamar Gedevanishvili <br>at Collect Art Gallery, Tbilisi, 25 November − 4 December, 2025.</p>
+					<h6 class="concept_title">Curator: Tamar Khelashvili, founder of the art platform, art manager, and curator of Collect Art Gallery</h6>
+					<h6 class="concept_title1">Concept</h6>
+					<p class="concept">What is the time given to us? Does it exist, or is it a figment of our imagination? And what does “given to us” mean? Why do we cross paths with someone or something?
+					<br>Sometimes we are here, in this time, and sometimes there, in another time. Somewhere in the virtual world we can create or destroy. Surely that, too, will have its reality. What is seen from afar is sometimes right there and real, while what stands beside us suddenly loses its weight and disappears.
+					<br>Reality changes when the visible and the invisible, the virtual and the tangible, exchange places unnoticeably.					<h6 class="concept_signature">Tamar Gedevanishvili</h6>
+					<p class="article_title">“Given Time”: A solo show by Tamar Gedevanishvili at Collect Art Gallery <br>by Tamar Khelashvili</p>
+					<!-- <div class="forCollect">
+					    <a href="https://www.collectartwork.org/post/given-time-tamar-gedevanishvili-s-solo-exhibition-1" target="_blank">
+					    	<span>Collect Art / Tamar Gedevanishvili − Given Time / by Tamar Khelashvili</span>
+					    </a>
+					</div> -->
+					<p class="article_title_under">​<i>I've always cherished looking at the artworks in an empty space, as if the characters found in the works are talking to you and telling you their stories, how they were formed at a given time, what stages they went through, what they saw and where they are going, what emotions they will arouse in whom, and how they will convey their message.</i></p>
+				</div>
+				<div class="swiper2_container">
+					<div class="swiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_1cc4ed0f8ff34a12b37ee7dd2f4fdc20~mv2.webp">
+								<!-- <button class="_2GCLN" type="button" aria-label="Expand image">
+									<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+										<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+									</svg>
+								</button> -->
+								<a href="img/f5dfdd_1cc4ed0f8ff34a12b37ee7dd2f4fdc20~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_645a83ab6a2f4d37b57cf2299b547372~mv2.webp">
+								<a href="img/f5dfdd_645a83ab6a2f4d37b57cf2299b547372~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_2038cacb9f5c4948a74dc9a73b0775a2~mv2.webp">
+								<a href="img/f5dfdd_2038cacb9f5c4948a74dc9a73b0775a2~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_4119be26783b47218e2c152a0e3497a8~mv2.webp">
+								<a href="img/f5dfdd_4119be26783b47218e2c152a0e3497a8~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_93737dd226ee493ca10f4b0df3063169~mv2.webp">
+								<a href="img/f5dfdd_93737dd226ee493ca10f4b0df3063169~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_b001559a1d304f93b9f3649d0ef5187e~mv2.webp">
+								<a href="img/f5dfdd_b001559a1d304f93b9f3649d0ef5187e~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_c06f369ad7dd4df3880a4036c057c821~mv2.webp">
+								<a href="img/f5dfdd_c06f369ad7dd4df3880a4036c057c821~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/f5dfdd_e4c00603367740049aeecc0de5ad3870~mv2.webp">
+								<a href="img/f5dfdd_e4c00603367740049aeecc0de5ad3870~mv2-big.webp" class="hot-spot" data-fancybox="gallery_1"></a>
+							</div>
+						</div>
+						<div class="swiper-button-prev-2"></div>
+						<div class="swiper-button-next-2"></div>
+					</div>
+				</div>
+				<div class="col-12 text_margin_top">
+					<p class="under_img">In <i>Given Time</i>, Georgian contemporary artist Tamar Gedevanishvili navigates between the visible and the invisible, the tangible world and its virtual copies. The exhibition gathers together large-scale acrylic paintings, intimate works on paper, and a series of drawings on café napkins; materials that together form a meditation on the uncertain nature of time and the fluidity of lived experience. </p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6 img_margin_top leli-div-1" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/06-By-Leli-Blagonravova.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/06-By-Leli-Blagonravova.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+					<h6 class="concept_signature-left">Photo by Leli Blagonravova</h6>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/48-given.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/48-given.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<!-- <div class="col-12 col-md-6 col-lg-6 img_margin_top button-fullscreen leli-div-1" style="position: relative;">
+					<img src="img/06-By-Leli-Blagonravova.webp">
+					<button class="_2GCLN" type="button" aria-label="Expand image">
+						<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+							<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+						</svg>
+					</button>
+					<a href="img/06-By-Leli-Blagonravova.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					<h6 class="concept_signature-left">Photo by Leli Blagonravova</h6>
+				</div> -->
+				
+				<!-- <div class="col-12 col-md-6 col-lg-6 button-fullscreen" style="position: relative;">
+					<img src="img/48-given.webp">
+					<button class="_2GCLN" type="button" aria-label="Expand image">
+						<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+							<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+						</svg>
+					</button>
+					<a href="img/48-given.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+				</div> -->
+				<div class="col-12 text_margin_top">
+					<p class="under_img">The exhibition raises a question both simple and profoundly elusive: <i class="font-bold">What is the time given to us?</i> The artist approaches this exploration as a witness, someone tracing the places where time folds, slips, and rearranges itself. Her large-scale canvases pulse with scenes in motion: waves breaking, bodies falling, winds overtaking, the urgent desire for shelter. Works such as 'Someone Fell Somewhere', 'Flood', 'It's Windy Now', and 'Overtaking' suspend the viewer in moments of transition, where events feel both approaching and distant. These artworks seem to emerge from a world perpetually on the edge; geographically, emotionally, and temporally.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-4 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/test_of_passions.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/test_of_passions.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-4 col-lg-4" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/place_for_fun.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/place_for_fun.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-4 col-lg-4" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/overtaking.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/overtaking.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12">
+					<p class="under_img">The paintings speak in the language of thresholds. A wave rises but never quite breaks; a figure falls but remains suspended in the painted field; a shelter is sought but not fully found. Tamar renders these states of in-between with a raw directness, pushing the canvas to hold what reality itself often cannot: a moment before its own collapse or completion. In this way, her large-scale works extend the exhibition's central proposition, that time may be less a linear path and more a conducting medium through which we drift, collide, and transform.</p>
+				</div>
+				<div class="swiper3_container">
+					<div class="swiper3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/34-given.webp">
+								<!-- <button class="_2GCLN" type="button" aria-label="Expand image">
+									<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+										<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+									</svg>
+								</button> -->
+								<a href="img/34-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/06-By-Leli-Blagonravova.webp">
+								<a href="img/06-By-Leli-Blagonravova.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/04-given.webp">
+								<a href="img/04-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/01-given.webp">
+								<a href="img/01-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/02given.webp">
+								<a href="img/02given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/03-given.webp">
+								<a href="img/03-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-2-given.webp">
+								<a href="img/2-2-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-3-given.webp">
+								<a href="img/2-3-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-6-given.webp">
+								<a href="img/2-6-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-7-given.webp">
+								<a href="img/2-7-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-1-given.webp">
+								<a href="img/3-1-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-3-given.webp">
+								<a href="img/3-3-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-3-given.webp">
+								<a href="img/4-3-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-22-given.webp">
+								<a href="img/4-22-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-15-given.webp">
+								<a href="img/3-15-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-19-given.webp">
+								<a href="img/3-19-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-23-given.webp">
+								<a href="img/3-23-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-9-given.webp">
+								<a href="img/4-9-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-2-given.webp">
+								<a href="img/4-2-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-10-given.webp">
+								<a href="img/4-10-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-13-given.webp">
+								<a href="img/4-13-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-14-given.webp">
+								<a href="img/4-14-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-15-given.webp">
+								<a href="img/4-15-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-16-given.webp">
+								<a href="img/4-16-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-21-given.webp">
+								<a href="img/4-21-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-29-given.webp">
+								<a href="img/4-29-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-30-given.webp">
+								<a href="img/4-30-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/05-given.webp">
+								<a href="img/05-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/07-given.webp">
+								<a href="img/07-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/08-given.webp">
+								<a href="img/08-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/09-given.webp">
+								<a href="img/09-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/10-given.webp">
+								<a href="img/10-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/11-given.webp">
+								<a href="img/11-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/12-given.webp">
+								<a href="img/12-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/13-given.webp">
+								<a href="img/13-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/14-by-Leli-Blagonravova.webp">
+								<a href="img/14-by-Leli-Blagonravova.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/16-given.webp">
+								<a href="img/16-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/17-given.webp">
+								<a href="img/17-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/19-given.webp">
+								<a href="img/19-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/20-given.webp">
+								<a href="img/20-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/21-given.webp">
+								<a href="img/21-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/23-given.webp">
+								<a href="img/23-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/24-given.webp">
+								<a href="img/24-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/25-given.webp">
+								<a href="img/25-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/26-given.webp">
+								<a href="img/26-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/27-given.webp">
+								<a href="img/27-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/29-given.webp">
+								<a href="img/29-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/30-given.webp">
+								<a href="img/30-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/31-given.webp">
+								<a href="img/31-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/32-given.webp">
+								<a href="img/32-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/33-given.webp">
+								<a href="img/33-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/36-given.webp">
+								<a href="img/36-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/37-given.webp">
+								<a href="img/37-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/38-given.webp">
+								<a href="img/38-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/40-given.webp">
+								<a href="img/40-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/41-given.webp">
+								<a href="img/41-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/44-given.webp">
+								<a href="img/44-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/48-given.webp">
+								<a href="img/48-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/49-given.webp">
+								<a href="img/49-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/20251125_183232.webp">
+								<a href="img/20251125_183232.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/20251125_183550.webp">
+								<a href="img/20251125_183550.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/20251125_190430.webp">
+								<a href="img/20251125_190430.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/20251125_191754.webp">
+								<a href="img/20251125_191754.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/586340038_25764577549806143_3510106024354390593_n.webp">
+								<a href="img/586340038_25764577549806143_3510106024354390593_n.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/588511182_25764859216444643_5551555603020059239_n.webp">
+								<a href="img/588511182_25764859216444643_5551555603020059239_n.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-1-given.webp">
+								<a href="img/2-1-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/594066095_4293756200840105_7470436447892211346_n.webp">
+								<a href="img/594066095_4293756200840105_7470436447892211346_n.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/593535074_32596431190005595_6653926995285875010_n.webp?v=20260110">
+								<a href="img/593535074_32596431190005595_6653926995285875010_n.webp?v=20260110" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-8-given.webp">
+								<a href="img/4-8-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-17-given.webp">
+								<a href="img/4-17-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-4-given.webp">
+								<a href="img/2-4-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-8-given.webp">
+								<a href="img/2-8-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-10-given.webp">
+								<a href="img/2-10-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/2-11-given.webp">
+								<a href="img/2-11-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-5-given.webp">
+								<a href="img/4-5-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-4-given.webp">
+								<a href="img/4-4-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4-1-given.webp">
+								<a href="img/4-1-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-22-given.webp">
+								<a href="img/3-22-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-18-given.webp">
+								<a href="img/3-18-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-17-given.webp">
+								<a href="img/3-17-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-12-given.webp">
+								<a href="img/3-12-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-5-given.webp">
+								<a href="img/3-5-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-4-given.webp">
+								<a href="img/3-4-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/3-2-given.webp">
+								<a href="img/3-2-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/46-given.webp">
+								<a href="img/46-given.webp" class="hot-spot" data-fancybox="gallery"></a>
+							</div>
+						</div>
+						<div class="swiper-button-prev-3"></div>
+						<div class="swiper-button-next-3"></div>
+					</div>
+				</div>
+				<div class="col-12 text_margin_top">
+					<p class="under_img">Contrasting with the large-scale canvases are the smaller paintings and works on paper, which are like fragments of internal monologue. Pieces such as 'You Are Spread Out in Me', 'My Home Is Everywhere', and 'There Can Be A Peace For A While' shift the narrative inward, revealing a psychological space made of fleeting thoughts, quiet uncertainties, and private intuitions. Here, the intimacy of scale underscores the vulnerability of the themes. Time becomes not an external force but a series of emotional weather patterns; momentary, unpredictable, and deeply felt.</p>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/Canvas, acrylic, 50X60.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/Canvas, acrylic, 50X60.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/Canvas, acrylic, 40X50 _01.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/Canvas, acrylic, 40X50 _01.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/50x70 cm _01.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/50x70 cm _01.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/30x40-cm-sxvebi-saubroben.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/30x40-cm-sxvebi-saubroben.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/42x30_01.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/42x30_01.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 col-md-2 col-lg-2 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<img src="img/20250927_180655.webp">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<a href="img/20250927_180655.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 text_margin_top">
+					<p class="under_img">Perhaps the most touching element of the exhibition is the series of drawings on paper napkins, created in cafés and collected over time. These fragile papers bear spontaneous marks, observations, gestures, and impulses caught between conversations, pauses, and waiting. Their disposability makes them powerful: they are records of time not officially kept but quietly lived. In their informality, they become the truest expression of the exhibition's core idea: that meaning often emerges in the intervals and interstices of daily existence.</p>
+				</div>
+				<div class="col-12 col-md-12 col-lg-12 img_margin_top" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/1111111111111.webp" class="img-1111111111111">
+						<a href="img/1111111111111.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+				</div>
+				<div class="col-12 text_margin_top">
+					<p class="under_img">Across all media, Tamar's work suggests that time is less “given” than exchanged between people, between spaces, between states of being. The visible and invisible trade places, the virtual mirrors the real, and the familiar becomes strange just as the distant becomes immediate. Her images hold this instability with tenderness and acuity, inviting viewers to consider how their own timelines intersect with those of others, and what forces determine these crossings in given time.</p>
+					<p class="under_img">'Given Time' ultimately proposes that reality is not fixed but continually rewritten by perception, memory, and imagination. What we believe to be present may already be disappearing; what we assume is far away may in fact be pressing against us. Through her layered works, the artist reveals the beauty and fragility of these dislocations, offering not answers but an atmosphere, a space in which to sit with the shifting nature of the time we inhabit.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6 leli-div" style="position: relative;">
+					<span class="button-fullscreen">
+						<button class="_2GCLN" type="button" aria-label="Expand image">
+							<svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" class="_7BsaY">
+								<path d="M15.071 8.371V4.585l-4.355 4.356a.2.2 0 0 1-.283 0l-.374-.374a.2.2 0 0 1 0-.283l4.356-4.355h-3.786a.2.2 0 0 1-.2-.2V3.2c0-.11.09-.2.2-.2H16v5.371a.2.2 0 0 1-.2.2h-.529a.2.2 0 0 1-.2-.2zm-6.5 6.9v.529a.2.2 0 0 1-.2.2H3v-5.371c0-.11.09-.2.2-.2h.529c.11 0 .2.09.2.2v3.786l4.355-4.356a.2.2 0 0 1 .283 0l.374.374a.2.2 0 0 1 0 .283L4.585 15.07h3.786c.11 0 .2.09.2.2z" fill="#000" fill-rule="nonzero"></path>
+							</svg>
+						</button>
+						<img src="img/leli-Image-2026-01-12-14.18.27.webp">
+						<a href="img/leli-Image-2026-01-12-14.18.27.webp" class="hot-spot-width" data-fancybox="gallery_2"></a>
+					</span>
+					<h6 class="concept_signature-left">Photo by Leli Blagonravova</h6>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6">
+					<div class="video-container">
+						<video id="vid" class="my-video video-js" data-setup="{}" controls>
+							<source src="img/Dedikas-video.mp4" type="video/mp4">
+						</video>
+					</div>
+					<h6 class="concept_signature-left">Video by Dedika Bulia</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="trigger-container">
+		<a href="#trigger-icon">
+			<div class="trigger-icon js-trigger-icon">
+		        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" viewBox="0 0 16 16">
+		        	<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+		        </svg>
+			</div>
+		</a>
+	</div>
+	<footer>
+		<section>
+			<div class="container-footer">
+				<div class="row-footer">
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Projects</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="given_time.html">Given Time</a>
+								</li>
+								<li class="footer-link">
+									<a href="charity-elene.html">Group exhibition for #Elene</a>
+								</li>
+								<li class="footer-link">
+									<a href="we-color-qart1.html">Qart1</a>
+								</li>
+								<li class="footer-link">
+									<a href="flow-of-people.html">The flow of people will not stop</a>
+								</li>
+								<li class="footer-link">
+									<a href="we-color-georgia.html">We Color Georgia</a>
+								</li>
+								<li class="footer-link">
+									<a href="strong-georgia.html">Strong Georgia</a>
+								</li>
+								<li class="footer-link">
+									<a href="home.html">Home</a>
+								</li>
+								<li class="footer-link">
+									<a href="renovation.html">Renovation</a>
+								</li>
+								<li class="footer-link">
+									<a href="fiesta.html">Fiesta</a>
+								</li>
+								<li class="footer-link">
+									<a href="free-city.html">Free City</a>
+								</li>
+								<li class="footer-link">
+									<a href="our_times.html">Connections</a>
+								</li>
+								<li class="footer-link">
+									<a href="our_times.html">Our Times</a>
+								</li>
+								<li class="footer-link">
+									<a href="improper_intersections.html">Improper Intersections</a>
+								</li>
+								<li class="footer-link">
+									<a href="kipshidze-wall.html">Kipshidze Wall</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer footer-second">
+						<div>
+							<h5 class="title-home">Graphic</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="whole-life.html">For a Whole Life</a>
+								</li>
+								<li class="footer-link">
+									<a href="love_in_vain.html">Love in Vain</a>
+								</li>
+								<li class="footer-link">
+									<a href="scenes-from-life.html">Scenes from Life</a>
+								</li>
+								<li class="footer-link">
+									<a href="napkins.html">Napkins at Cafe</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer footer-third">
+						<div>
+							<h5 class="title-home">Gallery</h5>
+							<ul>
+								<li class="footer-link">
+									<a href="given-time-for_gallery.html">Given Time</a>
+								</li>
+								<li class="footer-link">
+									<a href="improper_gallery-for_gallery.html">Improper Intersections</a>
+								</li>
+								<li class="footer-link">
+									<a href="painting.html">Painting</a>
+								</li>
+								<li class="footer-link">
+									<a href="pastel.html">Pastel</a>
+								</li>
+								<li class="footer-link">
+									<a href="watercolor.html">Watercolor</a>
+								</li>
+								<li class="footer-link">
+									<a href="gouache.html">Gouache</a>
+								</li>
+								<li class="footer-link">
+									<a href="sculpture.html">Sculpture</a>
+								</li>
+								<li class="footer-link">
+									<a href="engraving.html">Engraving</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Contact</h5>
+							<ul>
+								<li class="footer-link">Phone: 
+									<a href="tel:+995599270979">(+995) 599270979</a>
+								</li>
+								<li class="footer-link">
+									Email:
+									<a href="mailto:tamgedevani@gmal.com">tamgedevani@gmail.com</a>
+								</li>
+								<!-- <li class="footer-link inst-face">
+									<a href="https://www.instagram.com/gedevanishvilit/?fbclid=IwAR38-J26NKYZy-R4wkIrW2jXMquZDOJsfrpLxbARvC4oGeoFTAgaTBeFszA" target="blank"><i class="fa-brands fa-instagram"></i></a>
+									<a href="#;"><i class="fa-brands fa-facebook"></i></a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+					<div class="col-footer">
+						<div>
+							<h5 class="title-home">Follow Me</h5>
+							<ul>
+								<li class="footer-link inst-face">
+									<a href="https://www.instagram.com/gedevanishvilit/?fbclid=IwAR38-J26NKYZy-R4wkIrW2jXMquZDOJsfrpLxbARvC4oGeoFTAgaTBeFszA" target="blank"><i class="fa-brands fa-instagram"></i></a>
+									<a href="#;"><i class="fa-brands fa-facebook"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-end">
+						<div>
+							<p class="footer-copy">© 2025 Tamar Gedevanishvili. All rights reserved.</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+	</footer>
+
+
+
+
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/baguetteBox.js"></script> -->
+	<script type="text/javascript" src="js/fancybox-forYoutube.umd.js"></script>
+	<!-- <script type="text/javascript" src="js/fancybox.umd.js"></script> -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+	<!-- <script type="text/javascript" src="js/script.js"></script> -->
+	<script type="text/javascript" src="js/given.js?v=20260118"></script>
+	
+	<script type="text/javascript" src="js/video.min.js"></script>
+
+	<!-- <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script> -->
+	<!-- <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script> -->
+
+
+	<!-- Google tag (gtag.js) google-analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN54RPHKDJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KN54RPHKDJ');
+    </script>
+
+
+	
+
+
+
+</body>
+</html>
