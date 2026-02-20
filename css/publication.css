@@ -1,0 +1,130 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.public_head svg, .svg-div{
+    width: 50px;
+}
+.public_head .collect-col .collect-text, .public_head .collect-col-1 .collect-text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.our_head.public_head .row .atge-col-1 .title-home{
+    margin-top: 0;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+.our_head.public_head .row .collect-col-2, .our_head.public_head .row .atge-col-2{
+    margin-top: 1rem;
+}
+.collect-col .title-home, .our_head.public_head .row .collect-col-1 .title-home, .our_head.public_head .row .collect-col-3 .title-home{
+    margin-top: 1rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+.public_head .collect-col span, .public_head .atge-col-1 span, .public_head .collect-col-1 span, .public_head .collect-col-3 span{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.public_head .collect-col span a p, .our_head.public_head .row .collect-col-1 span a p, .our_head.public_head .row .collect-col-3 span a p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #0064ff;
+}
+.public_head .collect-col span a p:hover, .public_head .collect-col-1 span a p:hover, .our_head.public_head .row .collect-col-1 span a p:hover, .our_head.public_head .row .collect-col-3 span a p:hover{
+    /*color: #b35316;*/
+    color: #5698ff;
+}
+.public_head .atge-col-1, .public_head .collect-col-top{
+    margin-top: 2.5rem;
+}
+.public_head .collect-col-1{
+    margin-top: 5rem;
+}
+.public_head .collect-col-3{
+    margin-top: 2.5rem;
+}
+.our_head.public_head .row .atge-col-1 span a p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #0064ff;
+}
+.public_head .atge-col{
+    margin-top: 5rem;
+}
+.our_head.public_head .row .atge-col .atge-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.public_head .lpc-div{
+    margin-top: 6.5rem;
+}
+.read-more-text, .read-more-text1, .read-more-text2, .read-more-text3 {
+    display: none;
+}
+.read-more-text.read-more-text--show, .read-more-text1.read-more-text--show, .read-more-text2.read-more-text--show, .read-more-text3.read-more-text--show {
+    display: inline;
+}
+.read-more-btn, .read-more-btn1, .read-more-btn2, .read-more-btn3{
+    /*position: absolute;*/
+    font-weight: bold;
+    cursor: pointer;
+}
+.read-more-btn.hidden, .read-more-btn1.hidden, .read-more-btn2.hidden, .read-more-btn3.hidden{
+    display: none;
+}
+.thr_dots.hidden, .thr_dots1.hidden, .thr_dots2.hidden, .thr_dots3.hidden{
+    display: none;
+}
+.more_paragr, .more_paragr1, .more_paragr2, .more_paragr3{
+    display: none;
+}
+.more_paragr.show, .more_paragr1.show, .more_paragr2.show, .more_paragr3.show{
+    display: inline;
+}
+.read-less-btn, .read-less-btn1, .read-less-btn2, .read-less-btn3{
+    display: none;
+}
+.title-home-given{
+    margin-top: 0;
+    margin-bottom: .4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.read-less-btn.show, .read-less-btn1.show, .read-less-btn2.show, .read-less-btn3.show{
+    display: inline;
+    /*font-weight: bold;*/
+    font-weight: normal;
+    cursor: pointer;
+}
+.read_more p, .read-more-text p, .read_more1 p, .read-more-text1 p, .read_more2 p, .read-more-text2 p, .read-more-text3 p{
+    padding-top: 0!important;
+    margin-top: 0!important;
+    margin-bottom: .7rem!important;
+    text-align: left!important;
+    font-style: normal!important;
+}
+.publication-read span{
+    font-family: "Lato";
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.publication-read span:hover{
+    /*color: #b35316;*/
+    color: #5d5d5d;
+}
+.fiesta_head .col-12 div p:nth-child(3), .fiesta_head .col-12 div p:nth-child(4){
+    display: none;
+}

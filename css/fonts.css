@@ -1,0 +1,204 @@
+/*@font-face {
+    font-family: 'Euphemia';
+    src: url('../fonts/Euphemia.woff2') format('woff2'),
+         url('../fonts/Euphemia.woff') format('woff'),
+         url('../fonts/Euphemia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}*/
+@font-face {
+    font-family: 'euphemia';
+    src: url('../fonts/euphemia.woff2') format('woff2'),
+         url('../fonts/euphemia.woff') format('woff'),
+         url('../fonts/euphemia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot') format('embedded-opentype'),
+         url('../fonts/Lato-Regular.woff2') format('woff2'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}*/
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Italic.woff2') format('woff2'),
+         url('../fonts/Lato-Italic.woff') format('woff'),
+         url('../fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+         url('../fonts/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Lato-BoldItalic.woff') format('woff'),
+         url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.woff2') format('woff2'),
+         url('../fonts/Lato-Light.woff') format('woff'),
+         url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-LightItalic.woff2') format('woff2'),
+         url('../fonts/Lato-LightItalic.woff') format('woff'),
+         url('../fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialMT.woff2') format('woff2'),
+         url('../fonts/ArialMT.woff') format('woff'),
+         url('../fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-ItalicMT.woff2') format('woff2'),
+         url('../fonts/Arial-ItalicMT.woff') format('woff'),
+         url('../fonts/Arial-ItalicMT.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-Mdm.woff2') format('woff2'),
+         url('../fonts/Arial-Mdm.woff') format('woff'),
+         url('../fonts/Arial-Mdm.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-MdmItl.woff2') format('woff2'),
+         url('../fonts/Arial-MdmItl.woff') format('woff'),
+         url('../fonts/Arial-MdmItl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-BoldMT.woff2') format('woff2'),
+         url('../fonts/Arial-BoldMT.woff') format('woff'),
+         url('../fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-BoldItalicMT.woff2') format('woff2'),
+         url('../fonts/Arial-BoldItalicMT.woff') format('woff'),
+         url('../fonts/Arial-BoldItalicMT.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI This';
+    src: url('../fonts/SegoeUIThis.woff2') format('woff2'),
+         url('../fonts/SegoeUIThis.woff') format('woff'),
+         url('../fonts/SegoeUIThis.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI This';
+    src: url('../fonts/SegoeUIThis-Italic.woff2') format('woff2'),
+         url('../fonts/SegoeUIThis-Italic.woff') format('woff'),
+         url('../fonts/SegoeUIThis-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI This';
+    src: url('../fonts/SegoeUIThis-Bold.woff2') format('woff2'),
+         url('../fonts/SegoeUIThis-Bold.woff') format('woff'),
+         url('../fonts/SegoeUIThis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI This';
+    src: url('../fonts/SegoeUIThis-BoldItalic.woff2') format('woff2'),
+         url('../fonts/SegoeUIThis-BoldItalic.woff') format('woff'),
+         url('../fonts/SegoeUIThis-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-brands-400.eot');
+    src: url('../webfonts/fa-brands-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../webfonts/fa-brands-400.woff') format('woff'),
+         url('../webfonts/fa-brands-400.ttf') format('truetype'),
+         url('../webfonts/fa-brands-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-regular-400.eot');
+    src: url('../webfonts/fa-regular-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-regular-400.woff2') format('woff2'),
+         url('../webfonts/fa-regular-400.woff') format('woff'),
+         url('../webfonts/fa-regular-400.ttf') format('truetype'),
+         url('../webfonts/fa-regular-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-solid-900.eot');
+    src: url('../webfonts/fa-solid-900.eot') format('embedded-opentype'),
+         url('../webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../webfonts/fa-solid-900.woff') format('woff'),
+         url('../webfonts/fa-solid-900.ttf') format('truetype'),
+         url('../webfonts/fa-solid-900.svg') format('svg');
+}
