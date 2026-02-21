@@ -5224,3 +5224,13 @@ html.with-fancybox body.hide-scrollbar {
     /*background-color: var(--f-button-active-bg);*/
     background-color: transparent;
 }
+
+.home-page-css .swiper {
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+}
+.home-page-css .swiper-initialized {   /* Swiper თვითონ ამატებს ამ კლასს init-ისას */
+    opacity: 1;
+}
