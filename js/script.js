@@ -196,6 +196,122 @@ Fancybox.bind("[data-fancybox='gallery']", {
 // });
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const swiperEl = document.querySelector(".swiper"); // მთლიანი swiper კონტეინერი
+//     const swiperWrapper = document.querySelector(".swiper-wrapper");
+//     const slides = Array.from(swiperWrapper.children);
+
+//     // Shuffle slides (შენი არსებული ლოგიკა)
+//     function shuffleArray(array) {
+//         for (let i = array.length - 1; i > 0; i--) {
+//             const j = Math.floor(Math.random() * (i + 1));
+//             [array[i], array[j]] = [array[j], array[i]];
+//         }
+//     }
+
+//     shuffleArray(slides);
+//     swiperWrapper.innerHTML = "";
+//     slides.forEach(slide => swiperWrapper.appendChild(slide));
+
+//     // ყველა img-ის ჩატვირთვის მოლოდინი
+//     const images = swiperWrapper.querySelectorAll("img");
+//     const loadPromises = Array.from(images).map(img => {
+//         return new Promise(resolve => {
+//             if (img.complete && img.naturalHeight !== 0) {
+//                 resolve();
+//             } else {
+//                 img.addEventListener("load", resolve, { once: true });
+//                 img.addEventListener("error", resolve, { once: true }); // error-ის შემთხვევაშიც გავაგრძელოთ
+//             }
+//         });
+//     });
+
+//     Promise.all(loadPromises).then(() => {
+//         // ახლა უსაფრთხოდ ვქმნით Swiper-ს
+//         const swiper = new Swiper('.swiper', {
+//             speed: 1200,
+//             autoplay: false,               // თავიდან გამორთული!
+//             loop: true,
+//             parallax: true,
+//             simulateTouch: true,
+//             grabCursor: true,
+//             observer: true,
+//             observeParents: true,
+//             observeSlideChildren: true,
+//             resizeObserver: true,
+//             watchOverflow: true,
+//             updateOnImagesReady: true,     // Swiper თვითონ განაახლებს თუ საჭიროა
+//             preloadImages: false,          // არ ჩატვირთავს ყველას წინასწარ (მაგრამ ჩვენ უკვე დაველოდეთ)
+//             autoHeight: false,             // თუ სლაიდები ერთი და იგივე სიმაღლისაა → false უკეთესია
+
+//             pagination: {
+//                 el: '.swiper-pagination',
+//                 clickable: true,
+//             },
+//             navigation: {
+//                 nextEl: '.swiper-button-next',
+//                 prevEl: '.swiper-button-prev'
+//             },
+
+//             on: {
+//                 init: function () {
+//                     // Swiper სრულად მზადაა → ახლა ვიწყებთ autoplay-ს
+//                     this.autoplay.start();
+//                     // თუ გინდა opacity fade-in:
+//                     // swiperEl.style.opacity = '1';
+//                 },
+//                 setTransition: function (duration) {
+//                     this.wrapperEl.style.transitionTimingFunction = 'cubic-bezier(0.25, 0.1, 0.25, 0.88)';
+//                 }
+//             }
+//         });
+
+//         // Add custom click handler for the entire pagination container
+//         const paginationContainer = document.querySelector('.swiper-pagination');
+//         paginationContainer.addEventListener('click', (event) => {
+//             const bullets = Array.from(paginationContainer.querySelectorAll('.swiper-pagination-bullet'));
+//             const rect = paginationContainer.getBoundingClientRect();
+//             const offsetX = event.clientX - rect.left; // Mouse position relative to the container
+
+//             // Calculate which bullet was clicked based on the mouse position
+//             const bulletWidth = rect.width / bullets.length;
+//             const clickedBulletIndex = Math.floor(offsetX / bulletWidth);
+
+//             // Change the slide to the corresponding bullet index
+//             if (clickedBulletIndex >= 0 && clickedBulletIndex < bullets.length) {
+//                 if (swiper.params.loop) {
+//                     swiper.slideToLoop(clickedBulletIndex);
+//                 } else {
+//                     swiper.slideTo(clickedBulletIndex);
+//                 }
+//             }
+//         });
+
+//         // slideChange-ზე pagination განახლება
+//         swiper.on('slideChange', () => {
+//             const bullets = Array.from(paginationContainer.querySelectorAll('.css-1pgup9w'));
+//             const realIndex = swiper.realIndex;
+//             bullets.forEach((bullet, index) => {
+//                 if (index === realIndex) {
+//                     bullet.classList.add('swiper-pagination-bullet-active');
+//                     bullet.setAttribute('aria-current', 'true');
+//                 } else {
+//                     bullet.classList.remove('swiper-pagination-bullet-active');
+//                     bullet.removeAttribute('aria-current');
+//                 }
+//             });
+//         });
+
+//         // თუ გინდა fade-in ეფექტი (არააუცილებელი)
+//         // swiperEl.style.transition = 'opacity 0.6s ease';
+//         // swiperEl.style.opacity = '1';
+//     }).catch(err => {
+//         console.error("Image load error:", err);
+//         // თუ რამე შეცდომაა → მაინც გავუშვათ Swiper (fallback)
+//     });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const swiperEl = document.querySelector(".swiper"); // მთლიანი swiper კონტეინერი
     const swiperWrapper = document.querySelector(".swiper-wrapper");
@@ -230,7 +346,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // ახლა უსაფრთხოდ ვქმნით Swiper-ს
         const swiper = new Swiper('.swiper', {
             speed: 1200,
-            autoplay: false,               // თავიდან გამორთული!
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,      // ეს უნდა იყოს აქ თავიდანვე!
+                pauseOnMouseEnter: false,         // თუ არ გინდა პაუზა hover-ზე
+            },
             loop: true,
             parallax: true,
             simulateTouch: true,
@@ -240,9 +360,9 @@ document.addEventListener("DOMContentLoaded", function () {
             observeSlideChildren: true,
             resizeObserver: true,
             watchOverflow: true,
-            updateOnImagesReady: true,     // Swiper თვითონ განაახლებს თუ საჭიროა
-            preloadImages: false,          // არ ჩატვირთავს ყველას წინასწარ (მაგრამ ჩვენ უკვე დაველოდეთ)
-            autoHeight: false,             // თუ სლაიდები ერთი და იგივე სიმაღლისაა → false უკეთესია
+            updateOnImagesReady: true,
+            preloadImages: false,
+            autoHeight: false,
 
             pagination: {
                 el: '.swiper-pagination',
@@ -255,33 +375,90 @@ document.addEventListener("DOMContentLoaded", function () {
 
             on: {
                 init: function () {
-                    // Swiper სრულად მზადაა → ახლა ვიწყებთ autoplay-ს
                     this.autoplay.start();
-                    // თუ გინდა opacity fade-in:
-                    // swiperEl.style.opacity = '1';
                 },
                 setTransition: function (duration) {
                     this.wrapperEl.style.transitionTimingFunction = 'cubic-bezier(0.25, 0.1, 0.25, 0.88)';
+                },
+                // დამატებითი უსაფრთხოება: restart after swipe/touch
+                touchEnd: function () {
+                    if (!this.autoplay.running) {
+                        this.autoplay.start();
+                    }
+                },
+                // restart after any slide change finishes (navigation, pagination, etc.)
+                slideChangeTransitionEnd: function () {
+                    if (!this.autoplay.running) {
+                        this.autoplay.start();
+                    }
                 }
             }
         });
 
+        // Navigation ღილაკებზე ცალკე force restart (ხშირად ეს აფიქსირებს პრობლემას)
+        if (swiper.navigation.nextEl) {
+            swiper.navigation.nextEl.addEventListener('click', () => {
+                setTimeout(() => {
+                    if (!swiper.autoplay.running) {
+                        swiper.autoplay.start();
+                    }
+                }, 100); // მცირე დაყოვნება transition-ის დასრულებისთვის
+            });
+        }
+
+        if (swiper.navigation.prevEl) {
+            swiper.navigation.prevEl.addEventListener('click', () => {
+                setTimeout(() => {
+                    if (!swiper.autoplay.running) {
+                        swiper.autoplay.start();
+                    }
+                }, 100);
+            });
+        }
+
         // შენი custom pagination click handler
+        // const paginationContainer = document.querySelector('.swiper-pagination');
+        // paginationContainer.addEventListener('click', (event) => {
+        //     const bullets = Array.from(paginationContainer.querySelectorAll('.css-1pgup9w'));
+        //     if (bullets.length === 0) return;
+
+        //     const rect = paginationContainer.getBoundingClientRect();
+        //     const offsetX = event.clientX - rect.left;
+        //     const bulletWidth = rect.width / bullets.length;
+        //     const clickedIndex = Math.floor(offsetX / bulletWidth);
+
+        //     if (clickedIndex >= 0 && clickedIndex < bullets.length) {
+        //         if (swiper.params.loop) {
+        //             swiper.slideToLoop(clickedIndex);
+        //         } else {
+        //             swiper.slideTo(clickedIndex);
+        //         }
+        //         // pagination click-ის შემდეგაც restart
+        //         setTimeout(() => {
+        //             if (!swiper.autoplay.running) {
+        //                 swiper.autoplay.start();
+        //             }
+        //         }, 100);
+        //     }
+        // });
+
+        // Add custom click handler for the entire pagination container
         const paginationContainer = document.querySelector('.swiper-pagination');
         paginationContainer.addEventListener('click', (event) => {
-            const bullets = Array.from(paginationContainer.querySelectorAll('.css-1pgup9w'));
-            if (bullets.length === 0) return;
-
+            const bullets = Array.from(paginationContainer.querySelectorAll('.swiper-pagination-bullet'));
             const rect = paginationContainer.getBoundingClientRect();
-            const offsetX = event.clientX - rect.left;
-            const bulletWidth = rect.width / bullets.length;
-            const clickedIndex = Math.floor(offsetX / bulletWidth);
+            const offsetX = event.clientX - rect.left; // Mouse position relative to the container
 
-            if (clickedIndex >= 0 && clickedIndex < bullets.length) {
+            // Calculate which bullet was clicked based on the mouse position
+            const bulletWidth = rect.width / bullets.length;
+            const clickedBulletIndex = Math.floor(offsetX / bulletWidth);
+
+            // Change the slide to the corresponding bullet index
+            if (clickedBulletIndex >= 0 && clickedBulletIndex < bullets.length) {
                 if (swiper.params.loop) {
-                    swiper.slideToLoop(clickedIndex);
+                    swiper.slideToLoop(clickedBulletIndex);
                 } else {
-                    swiper.slideTo(clickedIndex);
+                    swiper.slideTo(clickedBulletIndex);
                 }
             }
         });
@@ -301,12 +478,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        // თუ გინდა fade-in ეფექტი (არააუცილებელი)
-        // swiperEl.style.transition = 'opacity 0.6s ease';
-        // swiperEl.style.opacity = '1';
     }).catch(err => {
         console.error("Image load error:", err);
-        // თუ რამე შეცდომაა → მაინც გავუშვათ Swiper (fallback)
     });
 });
 
