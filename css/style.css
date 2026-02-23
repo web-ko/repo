@@ -2039,11 +2039,11 @@ button svg g, button svg polyline{
     width: 100%;
     height: 100%;
 }
-.css-rk0vpo>img, .css-rk0vpo>video {
+.css-rk0vpo>img, .css-rk0vpo picture>img, .css-rk0vpo>video{
     -o-object-fit: cover;
        object-fit: cover;
 }
-.css-rk0vpo>*:not(style) {
+.css-rk0vpo>*:not(style), .css-rk0vpo picture>*:not(style){
     overflow: hidden;
     position: absolute;
     top: 0px;
