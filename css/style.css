@@ -5234,9 +5234,11 @@ html.with-fancybox body.hide-scrollbar {
 .home-page-css .swiper-initialized {   /* Swiper თვითონ ამატებს ამ კლასს init-ისას */
     opacity: 1;
 }
-.home-page-css .index-home .active:focus{
-    color: #fff;
-}
-.home-page-css .scrolled-nav .navbar .index-home .active:focus {
-    color: #000;
+@media (hover: hover) and (pointer: fine) {
+    .home-page-css .index-home .active:focus{
+        color: #fff;
+    }
+    .home-page-css .scrolled-nav .navbar .index-home .active:focus {
+        color: #000;
+    }
 }
