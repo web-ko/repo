@@ -2957,7 +2957,7 @@ body:not(.ie):not(.unknown) .flourish-corner {
     color: #b35316;
 }
 section.bio:last-of-type p:last-of-type {
-    margin-bottom: 0.95px;
+    margin-bottom: 0.059375rem;
 }
 .biogr-page .read-more-click {
     margin-top: 2rem;
@@ -5233,4 +5233,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 .home-page-css .swiper-initialized {   /* Swiper თვითონ ამატებს ამ კლასს init-ისას */
     opacity: 1;
+}
+.home-page-css .index-home .active:focus{
+    color: #fff;
 }
