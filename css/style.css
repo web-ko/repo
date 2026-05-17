@@ -278,9 +278,9 @@ section img{
     margin-top: 7rem;
     padding: 0;
 }
-.video-wrapper .container .row .col-12:nth-child(3), .video-wrapper .container .row .col-12:nth-child(4), .video-wrapper .container .row .col-12:nth-child(5){
+/*.video-wrapper .container .row .col-12:nth-child(3), .video-wrapper .container .row .col-12:nth-child(4), .video-wrapper .container .row .col-12:nth-child(5){
     margin-top: 3rem;
-}
+}*/
 
 /* fancybox */
 .video-wrapper .video{
@@ -366,6 +366,7 @@ section img{
     font-family: "Lato";
     /*font-family: "Segoe UI This";*/
     font-size: 1.5rem;
+    text-align: center;
     color: #000;
 }
 @media(min-width: 768px) and (max-width: 1180px){
@@ -379,8 +380,9 @@ section img{
     }
 }
 @media(max-width: 650px){
-    .fancybox__caption h3 {
+    .fancybox__caption h3{
         font-size: 3.7vw;
+        text-align: center;
     }
 }
 @media(max-width: 575px){
@@ -1487,9 +1489,9 @@ footer p{
                 justify-content: start!important;
         width: 100%;
     }
-    .video-wrapper .container .row .col-12:nth-child(2){
+    /*.video-wrapper .container .row .col-12:nth-child(2){
         margin-top: 3rem;
-    }
+    }*/
     .home_container .home_container_col:nth-child(1) img:nth-child(1){
         display: none;
     }
@@ -2020,7 +2022,7 @@ button svg g, button svg polyline{
     display: block;
     padding-bottom: 56.25%;
 }
-.css-rk0vpo>*:not(style) {
+.css-rk0vpo>*:not(style), .css-rk0vpo picture>*:not(style) {
     overflow: hidden;
     position: absolute;
     top: 0px;
@@ -2039,11 +2041,11 @@ button svg g, button svg polyline{
     width: 100%;
     height: 100%;
 }
-.css-rk0vpo>img, .css-rk0vpo picture>img, .css-rk0vpo>video{
+.css-rk0vpo>img, .css-rk0vpo picture>img, .css-rk0vpo>video {
     -o-object-fit: cover;
        object-fit: cover;
 }
-.css-rk0vpo>*:not(style), .css-rk0vpo picture>*:not(style){
+.css-rk0vpo>*:not(style) {
     overflow: hidden;
     position: absolute;
     top: 0px;
@@ -2409,9 +2411,9 @@ button svg g, button svg polyline{
 .video-wrapper-new .container .row{
     --bs-gutter-x: 2.5rem;
 }
-.video-wrapper-new .container .row .col-12:nth-child(3), .video-wrapper-new .container .row .col-12:nth-child(4), .video-wrapper-new .container .row .col-12:nth-child(5) {
+/*.video-wrapper-new .container .row .col-12:nth-child(3), .video-wrapper-new .container .row .col-12:nth-child(4), .video-wrapper-new .container .row .col-12:nth-child(5) {
      margin-top: 0; 
-}
+}*/
 
 .biography-gallery .bio_container_row{
     margin: 0rem 3.25rem 0rem 3.25rem;
@@ -2588,9 +2590,9 @@ body:not(.ie):not(.unknown) .flourish-corner {
         height: 24vw;
         /* height: 24vw; */
     }
-    .video-wrapper-new .container .row .col-12:nth-child(3), .video-wrapper-new .container .row .col-12:nth-child(4), .video-wrapper-new .container .row .col-12:nth-child(5){
+    /*.video-wrapper-new .container .row .col-12:nth-child(3), .video-wrapper-new .container .row .col-12:nth-child(4), .video-wrapper-new .container .row .col-12:nth-child(5){
         margin-top: 3rem;
-    }
+    }*/
 }
 @media(max-width:1160px){
     .bio_container-new {
@@ -2957,7 +2959,7 @@ body:not(.ie):not(.unknown) .flourish-corner {
     color: #b35316;
 }
 section.bio:last-of-type p:last-of-type {
-    margin-bottom: 0.059375rem;
+    margin-bottom: 0.95px;
 }
 .biogr-page .read-more-click {
     margin-top: 2rem;
@@ -3278,33 +3280,10 @@ footer .container .row{
         height: 355px;
     }
 }
+
 @media (max-width: 767px) {
-    .video-wrapper .container .row .col-12:nth-child(2) {
-        margin-top: 0rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(3){
+    .margin-top-767{
         margin-top: 6rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(4){
-        margin-top: 0rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(5){
-        margin-top: 6rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(6){
-        margin-top: 0rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(7){
-        margin-top: 6rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(8){
-        margin-top: 0rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(9){
-        margin-top: 6rem;
-    }
-    .video-wrapper-new .container .row .col-12:nth-child(10){
-        margin-top: 0rem;
     }
 }
 @media(max-width: 991px){
@@ -3341,7 +3320,7 @@ footer .container .row{
     padding-left: 3rem;
     margin-bottom: 1.5rem;
     padding-left: 3rem;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
     color: #303030;
 }
@@ -5225,6 +5204,8 @@ html.with-fancybox body.hide-scrollbar {
     background-color: transparent;
 }
 
+
+
 .home-page-css .swiper {
     opacity: 0;
     -webkit-transition: opacity 0.6s ease;
@@ -5242,7 +5223,12 @@ html.with-fancybox body.hide-scrollbar {
         color: #000;
     }
 }
-/*without iframe*/
+
+
+
+
+
+
 .video-wrapper .pirveli-arxi-atributebi, .video-wrapper .artarea-atributebi{
     position: absolute;
 }
@@ -5252,8 +5238,8 @@ html.with-fancybox body.hide-scrollbar {
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin: .75rem;
     margin-top: .5rempx;
     border-radius: 50%;
@@ -5270,15 +5256,30 @@ html.with-fancybox body.hide-scrollbar {
     padding-bottom: .125rem;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: clip;
+    -o-text-overflow: clip;
+       text-overflow: clip;
     font-size: 1.4rem;
 
     /* fade effect */
+    -webkit-mask-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#000),
+        color-stop(95%, #000),
+        to(transparent)
+    );
     -webkit-mask-image: linear-gradient(
         to right,
         #000 0%,
         #000 95%,
         transparent 100%
+    );
+    mask-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#000),
+        color-stop(95%, #000),
+        to(transparent)
     );
     mask-image: linear-gradient(
         to right,
