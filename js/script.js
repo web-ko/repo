@@ -611,6 +611,102 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// loading="lazy"-ის პირველი სურათისთვის წაშლა
+// document.addEventListener("DOMContentLoaded", function () {
+//     const swiperWrapper = document.querySelector(".swiper-wrapper");
+//     if (!swiperWrapper) return;
+
+//     const slides = Array.from(swiperWrapper.children);
+
+//     // 1. Shuffle ფუნქცია ოპტიმიზირებული
+//     function shuffleArray(array) {
+//         for (let i = array.length - 1; i > 0; i--) {
+//             const j = Math.floor(Math.random() * (i + 1));
+//             [array[i], array[j]] = [array[j], array[i]];
+//         }
+//     }
+
+//     // 2. არევა და ხელახლა ჩასმა DocumentFragment-ის გამოყენებით (არ ტვირთავს DOM-ს)
+//     shuffleArray(slides);
+//     const fragment = document.createDocumentFragment();
+//     slides.forEach(slide => fragment.appendChild(slide));
+//     swiperWrapper.innerHTML = "";
+//     swiperWrapper.appendChild(fragment);
+
+//     // 3. ოპტიმიზაცია: არევის შემდეგ პირველ სურათს ვუხსნით lazy-ს და ვაძლევთ მაღალ პრიორიტეტს
+//     const allImages = swiperWrapper.querySelectorAll('.swiper-slide img');
+
+//     allImages.forEach((img, index) => {
+//         if (index === 0) {
+//             // პირველ ადგილზე მოხვედრილ სურათს სასწრაფოდ ვტვირთავთ
+//             img.removeAttribute('loading'); // სრულიად ვშლით lazy-ს
+//             img.setAttribute('fetchpriority', 'high'); // ბრაუზერს ვეუბნებით: "ეს უპირველესია!"
+//         } else {
+//             // დანარჩენებს ყოველი შემთხვევისთვის ვუტოვებთ/ვანიჭებთ lazy-ს
+//             img.setAttribute('loading', 'lazy');
+//         }
+//     });
+
+//     // ვამოწმებთ არის თუ არა მობილური მოწყობილობა
+//     const isMobile = window.innerWidth <= 768;
+
+//     // 4. ინიციალიზაციას გადავიტანთ requestAnimationFrame-ში, რომ ბურგერ მენიუს არ შეეშალოს ხელი
+//     requestAnimationFrame(() => {
+//         setTimeout(() => {
+//             const swiper = new Swiper('.swiper', {
+//                 speed: isMobile ? 1200 : 1200, // მობილურზე უფრო სწრაფი/მსუბუქი ანიმაცია
+//                 loop: true,
+//                 // კრიტიკული ცვლილება: მობილურზე ვთიშავთ პარალაქსს, რადგან ის ბლოკავს Main Thread-ს
+//                 parallax: !isMobile, 
+//                 autoplay: {
+//                     delay: 3000, // ოდნავ გავზარდოთ ინტერვალი სტაბილურობისთვის
+//                     disableOnInteraction: false,
+//                 },
+//                 preloadImages: false,
+//                 lazy: true,
+//                 watchSlidesProgress: !isMobile, // მობილურზე არ გვჭირდება ზედმეტი გამოთვლები
+
+//                 pagination: {
+//                     el: '.swiper-pagination',
+//                     clickable: true,
+//                 },
+//                 navigation: {
+//                     nextEl: '.swiper-button-next',
+//                     prevEl: '.swiper-button-prev'
+//                 },
+//                 on: {
+//                     init: function () {
+//                         this.autoplay.start();
+//                     },
+//                     touchEnd: function () {
+//                         setTimeout(() => {
+//                             if (!this.autoplay.running) this.autoplay.start();
+//                         }, 200);
+//                     }
+//                 }
+//             });
+
+//             // 5. Custom Pagination კონტროლერი
+//             const paginationContainer = document.querySelector('.swiper-pagination');
+//             if (paginationContainer) {
+//                 paginationContainer.addEventListener('click', (event) => {
+//                     const bullets = Array.from(paginationContainer.querySelectorAll('.css-1pgup9w, .swiper-pagination-bullet'));
+//                     if (bullets.length === 0) return;
+
+//                     const rect = paginationContainer.getBoundingClientRect();
+//                     const offsetX = event.clientX - rect.left;
+//                     const bulletWidth = rect.width / bullets.length;
+//                     const clickedIndex = Math.floor(offsetX / bulletWidth);
+
+//                     if (clickedIndex >= 0 && clickedIndex < bullets.length) {
+//                         swiper.slideToLoop(clickedIndex);
+//                     }
+//                 });
+//             }
+//         }, 100); // 100 მილიწამიანი დაყოვნება აძლევს ბრაუზერს საშუალებას ჯერ ინტერფეისი დასვას
+//     });
+// });
+
 // End of Without text changes
 // End of With change photos and texts when loading
 // End of Swiper
