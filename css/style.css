@@ -285,6 +285,7 @@ section img{
 /* fancybox */
 .video-wrapper .video{
     position: relative;
+    overflow: hidden;
 }
 .video-wrapper .video .hot-spot{
     position: absolute;
@@ -5226,9 +5227,6 @@ html.with-fancybox body.hide-scrollbar {
 
 
 
-
-
-
 .video-wrapper .pirveli-arxi-atributebi, .video-wrapper .artarea-atributebi{
     position: absolute;
 }
@@ -5248,38 +5246,25 @@ html.with-fancybox body.hide-scrollbar {
 }
 .pirveli-arxi-text{
     position: absolute;
-    left: 60px;
     top: 7px;
+    left: 60px;
+    right: 23px;
     color: #fff;
 }
 .pirveli-arxi-text h6{
+    margin: 0;
     padding-bottom: .125rem;
     white-space: nowrap;
     overflow: hidden;
-    -o-text-overflow: clip;
-       text-overflow: clip;
+    text-overflow: clip;
     font-size: 1.4rem;
 
     /* fade effect */
-    -webkit-mask-image: -webkit-gradient(
-        linear,
-        left top, right top,
-        from(#000),
-        color-stop(95%, #000),
-        to(transparent)
-    );
     -webkit-mask-image: linear-gradient(
         to right,
         #000 0%,
         #000 95%,
         transparent 100%
-    );
-    mask-image: -webkit-gradient(
-        linear,
-        left top, right top,
-        from(#000),
-        color-stop(95%, #000),
-        to(transparent)
     );
     mask-image: linear-gradient(
         to right,
@@ -5296,120 +5281,4 @@ html.with-fancybox body.hide-scrollbar {
 }
 .pirveli-arxi-logotext span{
     font-size: .7rem;
-}
-@media(max-width: 351px){
-    .pirveli-arxi-text h6{
-        width: 62vw;
-        font-size: 1.1rem;
-    }
-}
-@media(min-width: 352px){
-    .pirveli-arxi-text h6{
-        width: 70vw;
-        font-size: 1.1rem;
-    }
-}
-@media(min-width: 385px){
-    .pirveli-arxi-text h6{
-        width: 70vw;
-        font-size: 1.2rem;
-    }
-}
-@media(min-width: 422px){
-    .pirveli-arxi-text h6{
-        width: 71.5vw;
-        font-size: 1.2rem;
-    }
-}
-@media(min-width: 500px){
-    .pirveli-arxi-text h6{
-        width: 78.3vw;
-        font-size: 1.2rem;
-    }
-}
-@media(min-width: 768px){
-    .pirveli-arxi-text h6{
-        width: 35.5vw;
-        font-size: 1.2rem;
-    }
-}
-@media(min-width: 992px){
-    .pirveli-arxi-text h6{
-        width: 35%;
-        font-size: 1.2rem;
-    }
-    .dResaswauli .pirveli-arxi-text h6, .artarea .pirveli-arxi-text h6{
-        width: 80%;
-        font-size: 1.4rem;
-    }
-    .dRiskodi .pirveli-arxi-text h6{
-        width: 35%;
-        font-size: 1.4rem;
-    }
-    .seusabamao .pirveli-arxi-text h6{
-        width: 45%;
-        font-size: 1.4rem;
-    }
-}
-@media(min-width: 1101px){
-    .pirveli-arxi-text h6{
-        width: 35%;
-        font-size: 1.4rem;
-    }
-    .dResaswauli .pirveli-arxi-text h6{
-        width: 85%;
-        font-size: 1.4rem;
-    }
-    .artarea .pirveli-arxi-text h6{
-        width: 93%;
-        font-size: 1.4rem;
-    }
-    .dRiskodi .pirveli-arxi-text h6{
-        width: 40%;
-        font-size: 1.4rem;
-    }
-    .seusabamao .pirveli-arxi-text h6{
-        width: 47%;
-        font-size: 1.4rem;
-    }
-}
-@media(min-width: 1200px){
-    .pirveli-arxi-text h6{
-        width: 36%;
-        font-size: 1.4rem;
-    }
-    .dResaswauli .pirveli-arxi-text h6{
-        width: 90%;
-        font-size: 1.4rem;
-    }
-    .artarea .pirveli-arxi-text h6{
-        width: 100%;
-        font-size: 1.4rem;
-    }
-    .dRiskodi .pirveli-arxi-text h6{
-        width: 42%;
-        font-size: 1.4rem;
-    }
-    .seusabamao .pirveli-arxi-text h6{
-        width: 52%;
-        font-size: 1.4rem;
-    }
-}
-@media(min-width: 1400px){
-    .pirveli-arxi-text h6{
-        width: 44%;
-        font-size: 1.4rem;
-    }
-    .dResaswauli .pirveli-arxi-text h6, .artarea .pirveli-arxi-text h6{
-        width: 105%;
-        font-size: 1.4rem;
-    }
-    .dRiskodi .pirveli-arxi-text h6{
-        width: 49%;
-        font-size: 1.4rem;
-    }
-    .seusabamao .pirveli-arxi-text h6{
-        width: 60%;
-        font-size: 1.4rem;
-    }
 }
