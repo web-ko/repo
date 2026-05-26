@@ -5245,6 +5245,7 @@ html.with-fancybox body.hide-scrollbar {
     top: 0;
 }
 .pirveli-arxi-text{
+    display: none;
     position: absolute;
     top: 7px;
     left: 60px;
@@ -5276,7 +5277,8 @@ html.with-fancybox body.hide-scrollbar {
 .pirveli-arxi-logotext{
     position: absolute;
     left: 60px;
-    top: 26px;
+    /*top: 26px;*/
+    top: 15px;
     color: #fff;
 }
 .pirveli-arxi-logotext span{
