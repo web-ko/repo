@@ -3771,8 +3771,8 @@ footer .container .row{
 }
 .right-content{
     position: sticky;
-    /*top: 10px;*/
-    top: 22px;
+    top: 10px;
+    /*top: 20px;*/
     padding-top: 5.5rem;
     /*height: calc(1227px - 20%);*/
     height: -webkit-max-content;
