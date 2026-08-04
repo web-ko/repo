@@ -749,18 +749,40 @@ var swiper1 = new Swiper('.swiper1', {
 
 
 
-const mediaQuery = window.matchMedia('(max-width: 991px)')
-if (mediaQuery.matches) {
+// const mediaQuery = window.matchMedia('(max-width: 991.98px)')
+// if (mediaQuery.matches) {
 
+//     let scrollPosition;
+//     $(".read-more-click").click(function(){
+//         scrollPosition = $(window).scrollTop();
+//         $(".read-more").toggle();
+//         $(".read-more").get(0).offsetHeight; // Force layout update
+//         $(".read-more-click").toggleClass("hidden");
+//         $(".read-less-click").toggleClass("show");
+//     });
+//     $(".read-less-click").click(function(){
+//         $(".read-more").hide();
+//         $(".read-more").get(0).offsetHeight; // Force layout update
+//         $(".read-more-click").removeClass("hidden");
+//         $(".read-less-click").removeClass("show");
+//         $(window).scrollTop(scrollPosition); // Restore the scroll position
+//     });
+// }
+
+
+
+
+
+function bindReadMore() {
     let scrollPosition;
-    $(".read-more-click").click(function(){
+    $(".read-more-click").off("click").on("click", function(){
         scrollPosition = $(window).scrollTop();
         $(".read-more").toggle();
         $(".read-more").get(0).offsetHeight; // Force layout update
         $(".read-more-click").toggleClass("hidden");
         $(".read-less-click").toggleClass("show");
     });
-    $(".read-less-click").click(function(){
+    $(".read-less-click").off("click").on("click", function(){
         $(".read-more").hide();
         $(".read-more").get(0).offsetHeight; // Force layout update
         $(".read-more-click").removeClass("hidden");
@@ -768,6 +790,19 @@ if (mediaQuery.matches) {
         $(window).scrollTop(scrollPosition); // Restore the scroll position
     });
 }
+
+const mediaQuery = window.matchMedia('(max-width: 991.98px)');
+
+function handleMediaChange(e) {
+    if (e.matches) {
+        bindReadMore();
+    } else {
+        $(".read-more-click, .read-less-click").off("click");
+    }
+}
+
+handleMediaChange(mediaQuery); // საწყისი შემოწმება page load-ზე
+mediaQuery.addEventListener('change', handleMediaChange); // მუშაობს resize-ზეც
 
 
 
