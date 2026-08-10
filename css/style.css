@@ -1818,6 +1818,38 @@ button svg g, button svg polyline{
 }
 
 
+.project-gallery .image{
+    position: relative;
+}
+.project-gallery .image{
+    position: relative;
+}
+.project-gallery .image .taf-logo{
+    position: absolute;
+    /* width: 100px; */
+    width: calc(40% - 20px);
+    height: auto;
+    top: 0;
+    left: 0px;
+}
+.project-gallery .image .expo-logo{
+    position: absolute;
+    /* width: 63px; */
+    width: calc(23% - 20px);
+    height: auto;
+    left: 10px;
+    bottom: 10px;
+}
+.project-gallery .image .artnet-logo{
+    position: absolute;
+    /* width: 63px; */
+    width: calc(27% - 20px);
+    height: auto;
+    right: 0;
+    bottom: 0;
+}
+
+
 .project-gallery h2, .graphic-gallery h1, .gallery-gallery h1{
     margin-top: 7rem;
     margin-bottom: 7rem;
@@ -1883,15 +1915,15 @@ button svg g, button svg polyline{
 
 /* Hover effect for devices that support hover */
 @media (hover: hover) and (pointer: fine) {
-    .project-gallery .akv-14 div:hover .image img, 
-    .project-gallery .ka-ci div:hover .image img, 
-    .project-gallery .akva-6 div:hover .image img, 
-    .project-gallery .akva-7 div:hover .image img, 
-    .project-gallery .akva-20 div:hover .image img, 
-    .project-gallery .skulp-02 div:hover .image img, 
-    .project-gallery .guache-13 div:hover .image img, 
-    .project-gallery .guach-2 div:hover .image img, 
-    .project-gallery .grav-1 div:hover .image img, 
+    .project-gallery .akv-14 div:hover .image img.akvareli-14, 
+    .project-gallery .ka-ci div:hover .image img.kaci, 
+    .project-gallery .akva-6 div:hover .image img.akvareli-6, 
+    .project-gallery .akva-7 div:hover .image img.akvareli-7, 
+    .project-gallery .akva-20 div:hover .image img.akvareli-20, 
+    .project-gallery .skulp-02 div:hover .image img.skulptura-02, 
+    .project-gallery .guache-13 div:hover .image img.guashi-13, 
+    .project-gallery .guach-2 div:hover .image img.guaSi-2, 
+    .project-gallery .grav-1 div:hover .image img.graviura-1, 
     
     .graphic-gallery .akv-14 div:hover .image img, .gallery-gallery .akv-14 div:hover .image img {
         -webkit-transform: scale(1.05);
@@ -5332,10 +5364,13 @@ html.with-fancybox body.hide-scrollbar {
     font-weight: 400;
     color: #000;
 }
+.container-highlights .img-div{
+    position: relative;
+}
 .container-highlights img{
     width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     .container-highlights {
         max-width: 1154px;
         padding-left: 1.5rem;
@@ -5343,6 +5378,30 @@ html.with-fancybox body.hide-scrollbar {
     }
     .container-highlights .row{
         --bs-gutter-y: 1.8rem;
+    }
+    .container-highlights .img-div .taf-logo{
+        position: absolute;
+        /*width: 100px;*/
+        width: calc(32% - 20px);
+        height: auto;
+        top: 0;
+        left: 0px;
+    }
+    .container-highlights .img-div .expo-logo{
+        position: absolute;
+        /*width: 63px;*/
+        width: calc(18% - 20px);
+        height: auto;
+        left: 15px;
+        bottom: 14px;
+    }
+    .container-highlights .img-div .artnet-logo{
+        position: absolute;
+        /*width: 63px;*/
+        width: calc(20% - 20px);
+        height: auto;
+        right: 0;
+        bottom: 0
     }
 }
 @media (min-width: 768px) {
@@ -5359,6 +5418,30 @@ html.with-fancybox body.hide-scrollbar {
         height: 100%;
         -o-object-fit: cover;
            object-fit: cover;
+    }
+    .container-highlights .img-div .taf-logo{
+        position: absolute;
+        /*width: 100px;*/
+        width: calc(40% - 20px);
+        height: auto;
+        top: 0;
+        left: 0px;
+    }
+    .container-highlights .img-div .expo-logo{
+        position: absolute;
+        /*width: 63px;*/
+        width: calc(23% - 20px);
+        height: auto;
+        left: 10px;
+        bottom: 10px;
+    }
+    .container-highlights .img-div .artnet-logo{
+        position: absolute;
+        /*width: 63px;*/
+        width: calc(27% - 20px);
+        height: auto;
+        right: 0;
+        bottom: 0
     }
 }
 @media (min-width: 992px) {
