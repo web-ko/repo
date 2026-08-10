@@ -5404,6 +5404,29 @@ html.with-fancybox body.hide-scrollbar {
         bottom: 0
     }
 }
+@media (max-width: 575.98px) {
+    .container-highlights .img-div .taf-logo {
+        position: absolute;
+        width: calc(40% - 20px);
+        height: auto;
+        top: 0;
+        left: 0px;
+    }
+    .container-highlights .img-div .expo-logo {
+        position: absolute;
+        width: calc(23% - 20px);
+        height: auto;
+        left: 15px;
+        bottom: 14px;
+    }
+    .container-highlights .img-div .artnet-logo {
+        position: absolute;
+        width: calc(28% - 20px);
+        height: auto;
+        right: 0;
+        bottom: 0;
+    }
+}
 @media (min-width: 768px) {
     .container-highlights {
         max-width: 1154px;
