@@ -120,6 +120,27 @@ $(".read-less-btn3").click(function() {
 });
 
 
+let scrollPosition6;
+
+$(".read-more-btn4").click(function() {
+    scrollPosition6 = $(window).scrollTop(); // Store the current scroll position
+    $(".read-more-btn4").toggleClass("hidden");
+    $(".read-more-text4").toggleClass("read-more-text--show");
+    $(".thr_dots4").toggleClass("hidden");
+    $(".more_paragr4").toggleClass("show");
+    $(".read-less-btn4").toggleClass("show");
+});
+
+$(".read-less-btn4").click(function() {
+    $(".read-more-btn4").removeClass("hidden");
+    $(".read-more-text4").removeClass("read-more-text--show");
+    $(".thr_dots4").removeClass("hidden");
+    $(".more_paragr4").removeClass("show");
+    $(".read-less-btn4").removeClass("show");
+    $(window).scrollTop(scrollPosition6); // Restore the scroll position
+});
+
+
 
 
 
