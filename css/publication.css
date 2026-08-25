@@ -1,12 +1,15 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
 * Browsers: last 4 version
 */
 
 .public_head svg, .svg-div{
     width: 50px;
+}
+.public_head .art-gov-div .svg-div{
+    width: 350px;
 }
 .public_head .collect-col .collect-text, .public_head .collect-col-1 .collect-text{
     margin-top: 1rem;
@@ -65,30 +68,30 @@
 .public_head .lpc-div{
     margin-top: 6.5rem;
 }
-.read-more-text, .read-more-text1, .read-more-text2, .read-more-text3 {
+.read-more-text, .read-more-text1, .read-more-text2, .read-more-text3 , .read-more-text4 {
     display: none;
 }
-.read-more-text.read-more-text--show, .read-more-text1.read-more-text--show, .read-more-text2.read-more-text--show, .read-more-text3.read-more-text--show {
+.read-more-text.read-more-text--show, .read-more-text1.read-more-text--show, .read-more-text2.read-more-text--show, .read-more-text3.read-more-text--show , .read-more-text4.read-more-text--show {
     display: inline;
 }
-.read-more-btn, .read-more-btn1, .read-more-btn2, .read-more-btn3{
+.read-more-btn, .read-more-btn1, .read-more-btn2, .read-more-btn3, .read-more-btn4{
     /*position: absolute;*/
     font-weight: bold;
     cursor: pointer;
 }
-.read-more-btn.hidden, .read-more-btn1.hidden, .read-more-btn2.hidden, .read-more-btn3.hidden{
+.read-more-btn.hidden, .read-more-btn1.hidden, .read-more-btn2.hidden, .read-more-btn3.hidden, .read-more-btn4.hidden{
     display: none;
 }
-.thr_dots.hidden, .thr_dots1.hidden, .thr_dots2.hidden, .thr_dots3.hidden{
+.thr_dots.hidden, .thr_dots1.hidden, .thr_dots2.hidden, .thr_dots3.hidden, .thr_dots4.hidden{
     display: none;
 }
-.more_paragr, .more_paragr1, .more_paragr2, .more_paragr3{
+.more_paragr, .more_paragr1, .more_paragr2, .more_paragr3, .more_paragr4{
     display: none;
 }
-.more_paragr.show, .more_paragr1.show, .more_paragr2.show, .more_paragr3.show{
+.more_paragr.show, .more_paragr1.show, .more_paragr2.show, .more_paragr3.show, .more_paragr4.show{
     display: inline;
 }
-.read-less-btn, .read-less-btn1, .read-less-btn2, .read-less-btn3{
+.read-less-btn, .read-less-btn1, .read-less-btn2, .read-less-btn3, .read-less-btn4{
     display: none;
 }
 .title-home-given{
@@ -97,13 +100,13 @@
     text-transform: uppercase;
     font-weight: bold;
 }
-.read-less-btn.show, .read-less-btn1.show, .read-less-btn2.show, .read-less-btn3.show{
+.read-less-btn.show, .read-less-btn1.show, .read-less-btn2.show, .read-less-btn3.show, .read-less-btn4.show{
     display: inline;
     /*font-weight: bold;*/
     font-weight: normal;
     cursor: pointer;
 }
-.read_more p, .read-more-text p, .read_more1 p, .read-more-text1 p, .read_more2 p, .read-more-text2 p, .read-more-text3 p{
+.read_more p, .read-more-text p, .read_more1 p, .read-more-text1 p, .read_more2 p, .read-more-text2 p, .read-more-text3 p, .read-more-text4 p{
     padding-top: 0!important;
     margin-top: 0!important;
     margin-bottom: .7rem!important;
@@ -127,4 +130,10 @@
 }
 .fiesta_head .col-12 div p:nth-child(3), .fiesta_head .col-12 div p:nth-child(4){
     display: none;
+}
+.fiesta_head .col-12 div p:nth-child(3) {
+    display: none;
+}
+.public_head .art-gov-div .collect-text{
+    margin-top: 0;
 }

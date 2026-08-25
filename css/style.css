@@ -5370,6 +5370,7 @@ html.with-fancybox body.hide-scrollbar {
 .container-highlights img{
     width: 100%;
 }
+
 @media (max-width: 767.98px) {
     .container-highlights {
         max-width: 1154px;
@@ -5486,5 +5487,19 @@ html.with-fancybox body.hide-scrollbar {
         max-width: 1294px;
         padding-left: 0;
         padding-right: 0;
+    }
+}
+.container-highlights .img-div {
+    overflow: hidden;
+}
+.container-highlights .highlight_1 a .img-div .highlight-img_1, .container-highlights .highlight_2 a .img-div .highlight-img_2, .container-highlights .highlight_3 a .img-div .highlight-img_3{
+    -webkit-transition: 0.5s 0.1s ease-in-out;
+    transition: 0.5s 0.1s ease-in-out;
+}
+@media (hover: hover) and (pointer: fine) {
+    .container-highlights .highlight_1 a:hover .img-div .highlight-img_1, .container-highlights .highlight_2 a:hover .img-div .highlight-img_2, .container-highlights .highlight_3 a:hover .img-div .highlight-img_3{
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
     }
 }
