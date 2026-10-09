@@ -4679,7 +4679,7 @@ footer .container .row{
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #fff;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -4687,45 +4687,47 @@ footer .container .row{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: none;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 478px;
+    /*margin: 0 auto;*/
 }
-
+.home-page-css .cookie-consent button:hover{
+    background: transparent;
+    color: #5d5d5d;
+}
 .cookie-consent p {
     margin: 0 0 15px 0;
     font-size: 16px;
     line-height: 1.5;
 }
-
 .cookie-consent a {
-    color: #00f;
+    color: #000;
     text-decoration: underline;
 }
-
 .cookie-consent button {
+    font-family: 'Lato';
+    font-size: 0.75rem;
     padding: 10px 20px;
     margin-right: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    letter-spacing: 0.1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
 }
-
 .cookie-consent .accept {
-    background-color: #28a745;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
 }
-
 .cookie-consent .reject {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
 }
-
 .cookie-consent .customize {
     background-color: #007bff;
     color: #fff;
 }
-
 .cookie-consent.show {
     display: block;
 }
@@ -5364,7 +5366,7 @@ html.with-fancybox body.hide-scrollbar {
     font-weight: 400;
     color: #000;
 }
-.container-highlights .img-div{
+.container-highlights .img-div, .container-highlights .img-div-four-moods{
     position: relative;
 }
 .container-highlights img{
@@ -5434,14 +5436,23 @@ html.with-fancybox body.hide-scrollbar {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
-    .container-highlights .img-div{
+    .container-highlights .img-div, .container-highlights .img-div-four-moods{
         height: calc(100% - 27px);
+    }
+    .container-highlights .img-div-four-moods{
+        background-color: #f8f8f8;
     }
     .container-highlights img{
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
            object-fit: cover;
+    }
+    .container-highlights img.highlight-img_4{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
     .container-highlights .img-div .taf-logo{
         position: absolute;
@@ -5489,15 +5500,15 @@ html.with-fancybox body.hide-scrollbar {
         padding-right: 0;
     }
 }
-.container-highlights .img-div {
+.container-highlights .img-div, .container-highlights .img-div-four-moods {
     overflow: hidden;
 }
-.container-highlights .highlight_1 a .img-div .highlight-img_1, .container-highlights .highlight_2 a .img-div .highlight-img_2, .container-highlights .highlight_3 a .img-div .highlight-img_3{
+.container-highlights .highlight_1 a .img-div .highlight-img_1, .container-highlights .highlight_2 a .img-div .highlight-img_2, .container-highlights .highlight_3 a .img-div .highlight-img_3, .container-highlights .highlight_2 a .img-div-four-moods .highlight-img_4{
     -webkit-transition: 0.5s 0.1s ease-in-out;
     transition: 0.5s 0.1s ease-in-out;
 }
 @media (hover: hover) and (pointer: fine) {
-    .container-highlights .highlight_1 a:hover .img-div .highlight-img_1, .container-highlights .highlight_2 a:hover .img-div .highlight-img_2, .container-highlights .highlight_3 a:hover .img-div .highlight-img_3{
+    .container-highlights .highlight_1 a:hover .img-div .highlight-img_1, .container-highlights .highlight_2 a:hover .img-div .highlight-img_2, .container-highlights .highlight_3 a:hover .img-div .highlight-img_3, .container-highlights .highlight_2 a:hover .img-div-four-moods .highlight-img_4{
         -webkit-transform: scale(1.05);
             -ms-transform: scale(1.05);
                 transform: scale(1.05);
