@@ -251,6 +251,17 @@
 	<div class="container container-highlights">
 		<h4>Recent Highlights</h4>
 		<div class="row">
+			<div class="col-12 col-md-4 col-lg-4 highlight_2">
+				<a href="#;">
+					<div class="img-div-four-moods">
+						<img src="img/four-moods.svg" class="highlight-img_4">
+					</div>
+				</a>
+				<div class="highlights-text">
+					<h5>Four Moods</h6>
+					<h6>Gremeli Art Gallery, 10–16 October 2026</h6>
+				</div>
+			</div>
 			<div class="col-12 col-md-4 col-lg-4 highlight_1">
 				<a href="beyond-the-silence.html">
 					<div class="img-div">
@@ -277,7 +288,7 @@
 					<h6>21−24 May 2026</h6>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 col-lg-4 highlight_3">
+			<!-- <div class="col-12 col-md-4 col-lg-4 highlight_3">
 				<a href="kutaisi-2026.html">
 					<div class="img-div">
 						<img src="img/20260418_151246.webp" class="highlight-img_3">
@@ -287,7 +298,7 @@
 					<h5>Fathers and Sons − A Dialogue of Generations</h6>
 					<h6>David Kakabadze Fine Art Gallery, Kutaisi, 18 May 2026</h6>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<main class="container-bio setPin" id="read-more">
@@ -1055,12 +1066,16 @@
 	</footer>
 	<div class="cookie-consent" id="cookieConsent">
 	    <p>
+	        We use cookies to analyze website traffic and improve your browsing experience.
+	    </p>
+	    <!-- <p>
 	        We use cookies to enhance your experience on our website. By clicking "Accept", you consent to our use of cookies.
 	        Learn more in our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>.
-	    </p>
-	    <button class="accept" onclick="handleConsent('accept')">Accept</button>
-	    <button class="reject" onclick="handleConsent('reject')">Reject</button>
-	    <button class="customize" onclick="window.location.href='/cookie-settings.html'">Customize</button>
+	    </p> -->
+	    <!-- <button class="accept" onclick="handleConsent('accept')">Accept</button> -->
+	    <!-- <button class="reject" onclick="handleConsent('reject')">Reject</button> -->
+	    <!-- <button class="customize" onclick="window.location.href='/cookie-settings.html'">Customize</button> -->
+	    <button class="accept" onclick="dismissBanner()">Got it</button>
 	</div>
 	
 
@@ -1082,6 +1097,7 @@
 
 	<!-- <script type="text/javascript" src="js/script-gsap.js"></script> -->
 	<script type="text/javascript" src="js/script.js?v=20260804" defer></script>
+	<!-- <script src="js/cookie-consent.js" defer></script> -->
 
 
 	<!-- hyphens -->
@@ -1113,22 +1129,6 @@
 
       gtag('config', 'G-KN54RPHKDJ');
     </script>
-
-    
-
-    <!-- cookie-consent policy -->
-    <!-- <script>
-        function handleConsent(choice) {
-            localStorage.setItem('cookieConsent', choice);
-            document.getElementById('cookieConsent').classList.remove('show');
-        }
-
-        window.onload = function() {
-            if (!localStorage.getItem('cookieConsent')) {
-                document.getElementById('cookieConsent').classList.add('show');
-            }
-        };
-    </script> -->
 
 
 
