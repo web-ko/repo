@@ -5453,6 +5453,9 @@ html.with-fancybox body.hide-scrollbar {
         height: 100%;
         -o-object-fit: contain;
            object-fit: contain;
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
     }
     .container-highlights .img-div .taf-logo{
         position: absolute;
