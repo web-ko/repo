@@ -5437,7 +5437,8 @@ html.with-fancybox body.hide-scrollbar {
         padding-right: 1.5rem;
     }
     .container-highlights .img-div, .container-highlights .img-div-four-moods{
-        height: calc(100% - 27px);
+        /*height: calc(100% - 27px);*/
+        height: 270px;
     }
     .container-highlights .img-div-four-moods{
         background-color: #f8f8f8;
