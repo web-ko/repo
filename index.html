@@ -23,7 +23,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/main.min.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/main-biography.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/main-biography-short.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=20261120">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20261121">
 	<!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
 </head>
 <body class="home-page-css">
@@ -1130,6 +1130,25 @@
 	<!-- <script type="text/javascript" src="js/script-gsap.js"></script> -->
 	<script type="text/javascript" src="js/script.js?v=20260804" defer></script>
 	<!-- <script src="js/cookie-consent.js" defer></script> -->
+
+	<script> // height: 100svh-ის მუშაობა ძველი მობილურებისთვის
+		let rafId = null;
+
+		function setViewportHeight() {
+		  if (rafId) cancelAnimationFrame(rafId);
+
+		  rafId = requestAnimationFrame(() => {
+		    const vh = window.innerHeight * 0.01;
+		    document.documentElement.style.setProperty('--vh', `${vh}px`);
+		  });
+		}
+
+		setViewportHeight();
+		window.addEventListener('resize', setViewportHeight, { passive: true });
+		window.addEventListener('orientationchange', () => {
+		  setTimeout(setViewportHeight, 100);
+		}, { passive: true });
+	</script>
 
 
 	<!-- hyphens -->
